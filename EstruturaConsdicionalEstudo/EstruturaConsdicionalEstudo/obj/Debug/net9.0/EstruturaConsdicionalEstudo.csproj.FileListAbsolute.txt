@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\bin\Debug\net9.0\EstruturaConsdicionalEstudo.exe
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\bin\Debug\net9.0\EstruturaConsdicionalEstudo.deps.json
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\bin\Debug\net9.0\EstruturaConsdicionalEstudo.runtimeconfig.json
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\bin\Debug\net9.0\EstruturaConsdicionalEstudo.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\bin\Debug\net9.0\EstruturaConsdicionalEstudo.pdb
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.AssemblyInfo.cs
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\refint\EstruturaConsdicionalEstudo.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.pdb
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\EstruturaConsdicionalEstudo.genruntimeconfig.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaConsdicionalEstudo\obj\Debug\net9.0\ref\EstruturaConsdicionalEstudo.dll

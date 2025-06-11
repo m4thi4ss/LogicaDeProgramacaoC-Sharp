@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\bin\Debug\net9.0\EstruturaCondicionalAtividades.exe
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\bin\Debug\net9.0\EstruturaCondicionalAtividades.deps.json
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\bin\Debug\net9.0\EstruturaCondicionalAtividades.runtimeconfig.json
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\bin\Debug\net9.0\EstruturaCondicionalAtividades.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\bin\Debug\net9.0\EstruturaCondicionalAtividades.pdb
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.AssemblyInfo.cs
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\refint\EstruturaCondicionalAtividades.dll
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.pdb
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\EstruturaCondicionalAtividades.genruntimeconfig.cache
+C:\Users\silva\source\repos\EstruturaConsdicionalEstudo\EstruturaCondicionalAtividades\obj\Debug\net9.0\ref\EstruturaCondicionalAtividades.dll

@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\Resolução\Resolução\bin\Debug\net9.0\Resolução.exe
+C:\Users\silva\source\repos\Resolução\Resolução\bin\Debug\net9.0\Resolução.deps.json
+C:\Users\silva\source\repos\Resolução\Resolução\bin\Debug\net9.0\Resolução.runtimeconfig.json
+C:\Users\silva\source\repos\Resolução\Resolução\bin\Debug\net9.0\Resolução.dll
+C:\Users\silva\source\repos\Resolução\Resolução\bin\Debug\net9.0\Resolução.pdb
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.AssemblyInfo.cs
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.dll
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\refint\Resolução.dll
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.pdb
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.genruntimeconfig.cache
+C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\ref\Resolução.dll

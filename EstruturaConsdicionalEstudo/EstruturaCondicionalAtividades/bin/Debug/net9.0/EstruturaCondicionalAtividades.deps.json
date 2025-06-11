@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EstruturaCondicionalAtividades/1.0.0": {
+        "runtime": {
+          "EstruturaCondicionalAtividades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EstruturaCondicionalAtividades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

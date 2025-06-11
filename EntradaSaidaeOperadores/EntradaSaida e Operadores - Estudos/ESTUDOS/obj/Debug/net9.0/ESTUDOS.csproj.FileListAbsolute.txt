@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\bin\Debug\net9.0\ESTUDOS.exe
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\bin\Debug\net9.0\ESTUDOS.deps.json
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\bin\Debug\net9.0\ESTUDOS.runtimeconfig.json
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\bin\Debug\net9.0\ESTUDOS.dll
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\bin\Debug\net9.0\ESTUDOS.pdb
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.AssemblyInfo.cs
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.dll
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\refint\ESTUDOS.dll
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.pdb
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ESTUDOS.genruntimeconfig.cache
+C:\Users\silva\source\repos\ESTUDOS\ESTUDOS\obj\Debug\net9.0\ref\ESTUDOS.dll

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\silva\\source\\repos\\EstruturaConsdicionalEstudo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AB7E98-53D6-42A8-8857-4DFBEAB0AD2D}|EstruturaCondicionalAtividades\\EstruturaCondicionalAtividades.csproj|c:\\users\\silva\\source\\repos\\estruturaconsdicionalestudo\\estruturacondicionalatividades\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AB7E98-53D6-42A8-8857-4DFBEAB0AD2D}|EstruturaCondicionalAtividades\\EstruturaCondicionalAtividades.csproj|solutionrelative:estruturacondicionalatividades\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88EB0E92-B386-4A38-A6DE-429AAB9F7774}|EstruturaConsdicionalEstudo\\EstruturaConsdicionalEstudo.csproj|c:\\users\\silva\\source\\repos\\estruturaconsdicionalestudo\\estruturaconsdicionalestudo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88EB0E92-B386-4A38-A6DE-429AAB9F7774}|EstruturaConsdicionalEstudo\\EstruturaConsdicionalEstudo.csproj|solutionrelative:estruturaconsdicionalestudo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\source\\repos\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividades\\Program.cs",
+              "RelativeDocumentMoniker": "EstruturaCondicionalAtividades\\Program.cs",
+              "ToolTip": "C:\\Users\\silva\\source\\repos\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividades\\Program.cs",
+              "RelativeToolTip": "EstruturaCondicionalAtividades\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAPcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:51:59.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\source\\repos\\EstruturaConsdicionalEstudo\\EstruturaConsdicionalEstudo\\Program.cs",
+              "RelativeDocumentMoniker": "EstruturaConsdicionalEstudo\\Program.cs",
+              "ToolTip": "C:\\Users\\silva\\source\\repos\\EstruturaConsdicionalEstudo\\EstruturaConsdicionalEstudo\\Program.cs",
+              "RelativeToolTip": "EstruturaConsdicionalEstudo\\Program.cs",
+              "ViewState": "AgIAAGoBAAAAAAAAAAAcwHkBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T16:50:10.239Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
