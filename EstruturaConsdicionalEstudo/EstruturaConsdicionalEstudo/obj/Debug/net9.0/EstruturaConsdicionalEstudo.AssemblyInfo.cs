@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstruturaConsdicionalEstudo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22c58bc1f6fe41676f4799e9ae3c3b5d09695f77")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstruturaConsdicionalEstudo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstruturaConsdicionalEstudo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
