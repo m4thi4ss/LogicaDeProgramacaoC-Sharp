@@ -12,3 +12,18 @@ C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\refint\Reso
 C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.pdb
 C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\Resolução.genruntimeconfig.cache
 C:\Users\silva\source\repos\Resolução\Resolução\obj\Debug\net9.0\ref\Resolução.dll
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\bin\Debug\net9.0\Resolução.exe
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\bin\Debug\net9.0\Resolução.deps.json
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\bin\Debug\net9.0\Resolução.runtimeconfig.json
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\bin\Debug\net9.0\Resolução.dll
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\bin\Debug\net9.0\Resolução.pdb
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.AssemblyInfoInputs.cache
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.AssemblyInfo.cs
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.csproj.CoreCompileInputs.cache
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.sourcelink.json
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.dll
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\refint\Resolução.dll
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.pdb
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\Resolução.genruntimeconfig.cache
+C:\Users\silva\Documents\OneDrive\Documentos\ESTUDOS\Estudo_Logica_de_pg_c#\EntradaSaidaeOperadores\EntradaSaida e Operadores  - Resolução\Resolução\obj\Debug\net9.0\ref\Resolução.dll

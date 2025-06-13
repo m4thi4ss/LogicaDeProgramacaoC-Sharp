@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ODXWEDVxcyc=",
+  "dgSpecHash": "6R5dOGbCpl4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\silva\\source\\repos\\ESTUDOS\\ESTUDOS\\ESTUDOS.csproj",
+  "projectFilePath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EntradaSaidaeOperadores\\EntradaSaida e Operadores - Estudos\\ESTUDOS\\ESTUDOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\silva\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.300\\microsoft.net.sdk.compilers.toolset.9.0.300.nupkg.sha512"
+    "C:\\Users\\silva\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
   ],
   "logs": []
 }
