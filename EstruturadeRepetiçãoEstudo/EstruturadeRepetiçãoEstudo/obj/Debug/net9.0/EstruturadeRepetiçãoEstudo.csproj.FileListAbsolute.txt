@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\bin\Debug\net9.0\EstruturadeRepetiçãoEstudo.exe
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\bin\Debug\net9.0\EstruturadeRepetiçãoEstudo.deps.json
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\bin\Debug\net9.0\EstruturadeRepetiçãoEstudo.runtimeconfig.json
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\bin\Debug\net9.0\EstruturadeRepetiçãoEstudo.dll
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\bin\Debug\net9.0\EstruturadeRepetiçãoEstudo.pdb
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.AssemblyInfo.cs
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.dll
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\refint\EstruturadeRepetiçãoEstudo.dll
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.pdb
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\EstruturadeRepetiçãoEstudo.genruntimeconfig.cache
+C:\Users\silva\source\repos\EstruturadeRepetiçãoEstudo\EstruturadeRepetiçãoEstudo\obj\Debug\net9.0\ref\EstruturadeRepetiçãoEstudo.dll
