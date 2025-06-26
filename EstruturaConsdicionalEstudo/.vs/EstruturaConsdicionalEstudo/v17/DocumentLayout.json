@@ -54,21 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividade_1.8\\Program.cs",
-              "RelativeDocumentMoniker": "EstruturaCondicionalAtividade_1.8\\Program.cs",
-              "ToolTip": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividade_1.8\\Program.cs",
-              "RelativeToolTip": "EstruturaCondicionalAtividade_1.8\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:52:43.735Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -79,8 +66,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.7\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:51:45.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:51:45.855Z"
             },
             {
               "$type": "Document",
@@ -92,8 +78,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.6\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:50:33.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:50:33.924Z"
             },
             {
               "$type": "Document",
@@ -105,8 +90,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.5\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:49:17.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:49:17.811Z"
             },
             {
               "$type": "Document",
@@ -118,8 +102,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.4\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:48:17.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:48:17.941Z"
             },
             {
               "$type": "Document",
@@ -131,8 +114,7 @@
               "RelativeToolTip": "EstrturaCondicionalAtividade_1.3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:47:13.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:47:13.52Z"
             },
             {
               "$type": "Document",
@@ -144,8 +126,7 @@
               "RelativeToolTip": "EtruturaCondicionalAtividade_1.2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:45:28.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:45:28.766Z"
             },
             {
               "$type": "Document",
@@ -157,8 +138,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:43:05.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:43:05.085Z"
             },
             {
               "$type": "Document",
@@ -170,8 +150,7 @@
               "RelativeToolTip": "EstruturaCondicionalAtividade_1.0\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T17:41:38.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T17:41:38.122Z"
             },
             {
               "$type": "Document",
@@ -181,10 +160,22 @@
               "RelativeDocumentMoniker": "EstruturaCondicionalAtividades\\Program.cs",
               "ToolTip": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividades\\Program.cs",
               "RelativeToolTip": "EstruturaCondicionalAtividades\\Program.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAcwPgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAAAFgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T18:51:59.043Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividade_1.8\\Program.cs",
+              "RelativeDocumentMoniker": "EstruturaCondicionalAtividade_1.8\\Program.cs",
+              "ToolTip": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturaConsdicionalEstudo\\EstruturaCondicionalAtividade_1.8\\Program.cs",
+              "RelativeToolTip": "EstruturaCondicionalAtividade_1.8\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T17:52:43.735Z"
             },
             {
               "$type": "Document",
@@ -196,8 +187,7 @@
               "RelativeToolTip": "EstruturaConsdicionalEstudo\\Program.cs",
               "ViewState": "AgIAADIBAAAAAAAAAAAcwHkBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T16:50:10.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T16:50:10.239Z"
             }
           ]
         }
