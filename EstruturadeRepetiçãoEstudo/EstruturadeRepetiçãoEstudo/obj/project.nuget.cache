@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LALdHWxOXQ8=",
+  "dgSpecHash": "9+xklsA2qYM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
+  "projectFilePath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\silva\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
   ],

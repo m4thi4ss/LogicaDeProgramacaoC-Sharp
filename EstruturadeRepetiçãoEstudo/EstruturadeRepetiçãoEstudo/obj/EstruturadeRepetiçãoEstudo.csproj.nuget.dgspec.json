@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj": {}
+    "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj": {
+    "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
+        "projectUniqueName": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
         "projectName": "EstruturadeRepetiçãoEstudo",
-        "projectPath": "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
+        "projectPath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo.csproj",
         "packagesPath": "C:\\Users\\silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silva\\source\\repos\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\obj\\",
+        "outputPath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\EstruturadeRepetiçãoEstudo\\EstruturadeRepetiçãoEstudo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
