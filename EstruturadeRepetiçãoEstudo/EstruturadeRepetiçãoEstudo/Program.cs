@@ -271,7 +271,7 @@ for (int i = 0; i < num1; i++)
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*### **9. Adivinhe o número**
 
-O programa escolhe um número aleatório entre 1 e 100. O usuário tenta adivinhar e o programa dá dicas.*/
+O programa escolhe um número aleatório entre 1 e 100. O usuário tenta adivinhar e o programa dá dicas.
 
 int escolhido; //int - Esse seria o tipo de dado; escolhido - Seria o nome da variavel; Ele vai usar essa variavel dentro do DO para colocar um numero aleatorio.
 int num = 0; //int - Esse seria o tipo de dado; num - Seria o nome da variavel; Ele vai ser usado para guardar a informação passada pelo usuario;
@@ -283,20 +283,45 @@ do //O do ele seria um laço de repetição, onde ele vai rodar o bloco de codig
     escolhido = random.Next(0, 101); //escolhido - Seria o nome da variavel; random - vai ser a variavel que guarda a classe random; .Next - Seria o metodo da classe Random onde ele vai gerar um numero aleatorio seguindo a regra do paramentro; (0, 101) - Seria a regra do parametro do .Next.
 
         Console.WriteLine("Adivinhe o numero que o programa escolheu:"); //Console.WriteLine - Seria uma mensagem enviada para o usuario no console, nesse caso ele vai solicitar para o usuario para adivinhar qual numero o program escolheu.
-        num = int.Parse(Console.ReadLine()); //num - Seria o nome da variavel; int.Parse - Aqui ele está informando que o tipo de dado vai ser um int e não uma string; Console.ReadLine - Ele vai ler a informação passada pelo usuario e vai transformar de string para int; Sendo assim 
+        num = int.Parse(Console.ReadLine()); //num - Seria o nome da variavel; int.Parse - Aqui ele está informando que o tipo de dado vai ser um int e não uma string; Console.ReadLine - Ele vai ler a informação passada pelo usuario e vai transformar de string para int; Sendo assim foi utilizado o console WriteLine para mandar uma mensagem para o usuario solicitando o numero, em seguida criou a variavel chamada num que tem o tipo de dado int onde vai guardar as informações que forem passadas pelo usuario, como o tipo de dado vai ser int usei o .Parse para avisar e o ReadLine para ler a informação e transformar em um int ao inves de deixar ele como string.
 
-        if (num == escolhido)
+        if (num == escolhido) //if - Ele seria o SE, ex: SE o usuario informar que o num for a variavel escolhido ele vai lançar o bloco de codigo abaixo; () - Seria o parametro do if e a informação dentro seria a regra; num - Seria a variavel que vai guardar a iformação do usuario; == - Seria de igual; escolhido - Seria a variavel que vai guardar a resposta certa.
         {
-            Console.WriteLine("Você acertou!");
+            Console.WriteLine("Você acertou!"); //Console.WriteLine - Seria a mensagem que vai ser enviada para o usuario, nesse caso se a informação passada pelo usuario bater com a regra do parametro do if, ele vai mostrar essa mensagem;
         }
-        else if (num < escolhido)
-        {
-            Console.WriteLine("Esse numero é menor!!!");
+        else if (num < escolhido) //else if - Ele seria igual o if, mas como ja tem um if, por questão de nomeclatura ele é chamado de else if; () - Seria o parametro e a informação dentro seria a regra do else if
+    {
+            Console.WriteLine("Esse numero é menor!!!"); //Console.WriteLine - Esse seria uma mensagem que é enviada na tela do console para o usuario, nesse caso se a variavel num for menor que a escolhida, ele vai mandar essa mensagem para o usuario.
         }
-        else
+        else //Esse seria o else, ele pega todas a regras do if e do else if, e as informações que sobrar ele vai considerar como a regra dele, nesse caso so sobrou o numero maior que o escolhido.
         {
-            Console.WriteLine("Esse numero é maior!!!");
+            Console.WriteLine("Esse numero é maior!!!");//Console.WriteLine - Ele vai mandar uma mensagem para o usuario pelo console, nesse caso se a varivael num for maior que a variavel escolhido ela vai informar que esse numero é maior que o numero escolhido pelo o program
         }
     
-} while(num != escolhido);
+} while(num != escolhido); //While - Ele serve para informar pro DO se vai continuar rodando o bloco de codigo ou não; () - Seria o parametro e dentro dele seria as regras; num - Seria a variavel que vai guardar a informação que o usuario passar; != - Seria o operador de diferente; escolhido - Seria a variavel onde vai guardar o numero que foi escolhido pelo program. Nesse caso o while ele criou uma regra do que se o num for diferente do escolhido o bloco vai continar rodando, SE não for ele vai para o codigo e vai mostrar a mensagem do if.
 
+/*int num1;
+int escolhido1 = 0;
+
+do
+{
+    Random random = new Random();
+    escolhido1 = random.Next(0, 101);
+
+    Console.WriteLine("Me informe o numero que foi escolhido pelo 	program: ");
+    num1 = int.Parse(Console.ReadLine());
+
+    if (num1 == escolhido1)
+    {
+        Console.WriteLine("Parabens, acertou!!!");
+    }
+    else if (num1 < escolhido1)
+    {
+        Console.WriteLine("O numero informado é menor!");
+    }
+    else
+    {
+        Console.WriteLine("O numero informado é maior!");
+    }
+
+} while (num1 != escolhido1);*/
