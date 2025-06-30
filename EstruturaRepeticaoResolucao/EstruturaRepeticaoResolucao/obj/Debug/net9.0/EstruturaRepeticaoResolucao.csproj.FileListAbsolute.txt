@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\bin\Debug\net9.0\EstruturaRepeticaoResolucao.exe
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\bin\Debug\net9.0\EstruturaRepeticaoResolucao.deps.json
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\bin\Debug\net9.0\EstruturaRepeticaoResolucao.runtimeconfig.json
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\bin\Debug\net9.0\EstruturaRepeticaoResolucao.dll
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\bin\Debug\net9.0\EstruturaRepeticaoResolucao.pdb
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.AssemblyInfo.cs
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.dll
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\refint\EstruturaRepeticaoResolucao.dll
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.pdb
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\EstruturaRepeticaoResolucao.genruntimeconfig.cache
+C:\Users\silva\source\repos\EstruturaRepeticaoResolucao\EstruturaRepeticaoResolucao\obj\Debug\net9.0\ref\EstruturaRepeticaoResolucao.dll
