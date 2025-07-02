@@ -175,3 +175,123 @@ do
     }
 } while (idade1 > 100);*/
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*### **4. Contagem Progressiva Segura**
+
+Peça ao usuário para inserir um número inteiro positivo. O programa deve contar de 1 até esse número. Se a entrada for inválida ou negativa, exiba um erro.
+
+**Erros a serem tratados:**
+
+-Usuário digitar um texto ao invés de um número. (`FormatException`)
+- Usuário inserir um número muito grande. (`OverflowException`)
+- Usuário inserir um número negativo. (`ArgumentOutOfRangeException`)
+
+int numero = 0; //int - Seria um tipo de dado da variavel; numero - Seria nome da variavel; Nesse caso estou criando uma variavel para guardar a informação que vai ser solicitada dentro do DO, só não esta la dentro, por que ele vai apagar a informação toda vez que ela for executada.
+
+do //Seria um laço de repetição, onde ele vai executar o bloco de codigo toda vez que o while der verdadeiro, a hora que der falso ele vai rodar por completo.
+{
+    try //try - Ele testar o bloco de codigo completo, caso apareça algum erro que esteja dentro das regras dos paramentros dos catch ele vai rodar o bloco de codigo do catch especifico daquele erro que surgiu.
+    {
+        Console.WriteLine("Me informe um número inteiro positivo:"); //Console.WriteLine - Ele manda uma mensagem para o usuario no console, neese caso ele esta solicitando um numero inteiro positivo.
+        numero = int.Parse(Console.ReadLine()); //numero - Seria o nome da variavel; int.Parse - Aqui ele vai avisar que vai ter um tipo de dado int; Console.ReadLine - Ele vai ler a informação passada pelo usuario e vai transformar de string pra int. Sendo assim ele vai usar a variavel criada fora do DO, para não entrar no laço de repetição, e vai usar para guardar a informação que vai ser passada pelo usuario, o tipo de dado dela vai numero inteiro, usando o int.Parse para informar que vai ser um int, e no console.ReadLine ele vai usar para ler a informação passada e vai trasnformar de string para int.
+
+        if(numero <= 0) //if - Ele é usada para informar SE tal variavel for isso ou não for ele vai lançar o seu bloco de codigo; () - Seria o parametro; Nesse caso ele esta informar que SE a variavel numero for menor ou igual a 0 ele vai lançar o bloco de codigo abaix.
+        {
+            throw new ArgumentOutOfRangeException(); //throw - Ele lança uma exceção manual, onde ele inseri dentro de um lugar especifico no bloco de codigo dentro do try; new - Aqui ele esta criando um novo objeto de erro;ArgumentOutOfRangeException - Seria o erro especifico que pode dar dentro desse if, que seria fora do permitido; 
+        }
+        for (int i = 1; i <= numero; i++) // FOR - O for ele serve para fazer um laço de repetição que tem o inicio, o fim e essa leitura funciona com o icremento de +1; int - tipo daddo que vai ser a variavel i; i = 1 - Seria da onde vai começar o laço de repetição; i <= numero - onde vai finalizar o laço; i++ - Seria o icremento onde vai acrescentar +1, até chegar no final. Sendo assim esse for foi criado para mandar uma lista que começa do 1 e vai até a informação que foi guardada na variavel numero que vai ser informada pelo usuario, e pra chegar até o final usou o icremento do +1.
+        {
+            Console.Write(" " + i); // Console.Write - Ele manda uma mensagem em uma linha só para o usuario. Nesse caso ele vai mostrar a lista do 1 até a variavel numero;
+            
+        }
+    }
+    catch (FormatException) //catch - Ele serve para informar qual erro especifico vai rodar o bloco de codigo dele, ele colocar uma regra dentro do parametro dele, e o try vai lançar que tem um erro no bloco de codigo, se esse erro estiver dentro da regra que esta no parametro desse catch ele vai executar o bloco de codigo dele; () - Parametro do catch; FormatException - Esse seria o erro que pode dar no try que é especifico para a formatação da informação que for passada pelo usuario.;
+    {
+        Console.WriteLine("Erro:O número informado não é um número inteiro!"); //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario no console, nesse caso vai ser erro de formatação.
+    }
+    catch (ArgumentOutOfRangeException) //Catch - Ele serve para pegar o erro que for informado no bloco de codigo do try, se o erro estiver dentro da regra do parametro desse catch ele vai executar o bloco de codigo abaixo; () - Parametro do catch; ArgumentOutOfRangeException - Esse seria é especificação do erro, nesse caso seria se o número for negativo ele vai lnçar esse erro.
+    {
+        Console.WriteLine("Erro: O número informado é negativo."); //Console.WriteLine - Seria uma mensagem enviada para o usuario no console, nesse caso ele vai enviar que teve um erro o numero é negativo o que foi informado.
+    }
+} while (numero <= 0); //while - Seria o complemento do DO, ele tem uma regra dentro do parametro dele, e nessa regra se der verdade ele roda o bloco de codigo novamente, se der falso ele para de executar o codigo.
+
+int numero1 = 0;
+
+do
+{
+    try
+    {
+        Console.WriteLine("Me informe um número: ");
+        numero1 = int.Parse(Console.ReadLine());
+
+        
+        if (numero1 <= 0)
+        {
+            throw new ArgumentOutOfRangeException();
+        }
+        else if (numero1 > 100)
+        {
+            throw new OverflowException();
+        }
+        for (int i = 1; i <= numero1; i++)
+        {
+            Console.Write(" " + i);
+        }
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Erro: Pode informar somente números");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("Erro: Não pode inserir essa quantidade de números");
+    }
+    catch (ArgumentOutOfRangeException)
+    {
+        Console.WriteLine("Erro: Não pode inserir número negativo");
+    }
+}
+while (numero1 <= 0 || numero1 > 100);*/
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    /*### **5. Soma de Números**
+
+    Crie um programa que peça ao usuário para inserir 5 números e some-os. Use `try/catch` para lidar com entradas inválidas.
+
+    **Erros a serem tratados:**
+
+    -Usuário digitar um valor não numérico. (`FormatException`)
+    - Usuário inserir um número negativo. (`ArgumentOutOfRangeException`)
+
+    int numero = 0; //int - Seria o tipo de dado da variavel; numero - Seria o nome da variavel; Aqui ele esta pra fora, por que não pode colocar uma variavel dentro do DO, se não ele vai apagar as informações toda vez que for executado.
+int resultado = 0; //int - Seria o tipo de dado da variavel; resultado - Seria o nome da variavel; Nesse caso ele esta pra fora, por que dentro do DO toda vez que o bloco de codigo fosse executado as informações guardadas seria apagadas. 
+
+do //Do - Ele seria um laço de repetição onde tudo que estiver dentro dele vai ser executado até o while der falso.
+{
+    try //try - Ele vai testar o bloco de codigo dele, se aparecer algum erro e o catch tiver esse erro dentro da regra dele que fica no parametro daquele catch ele vai rodar o bloco de codigo daquele catch em especifico;
+    {
+        
+        for (int i = 1; i <= 5; i++) //for - Ele seria uma estrutura de repetição que tem o inicio e usa o incremento de 1 pra chegar no final do i; () - Seria o parametro; int - Seria o tipo de dado da variavel que vai dentro do parametro do for; i = 1 - Seria o inicio da estrutura repetição do for; i <= 5 - Seria o final da estrutura de repetição do for; i++ - Seria como ele vai fazer pra chegar do inicio ao fim, incremento +1; Sendo assim o for ele vai utilizado para repetir o console writeLine 5 vezes.
+        {
+            Console.WriteLine("Me informe um número: "); //Console.WriteLine - Ele serve para mostrar uma mensagem na tela do usuario. Nesse caso ele vai solicitar os numero;
+            numero = int.Parse(Console.ReadLine()); // numero - Seria a variavel que esta fora do DO, que vai guardar as informações do usuario; int.Parse - Aqui ele vai avisar que a variavel tem o tipo de dado int; Console.ReadLine - Aqui ele vai ler a informação da variavel numero e vai transformar de string para int;
+            if (numero < 0) //if - Ele seria o SE, sendo usado para SE a informação estiver dentro da regra do parametro dele, ele vai rodar o bloco de codigo abaixo;() - Seria o parametro; numero < 0 - Aqui esta informando que SE a variavel numero for menor que 0 ele vai rodar o bloco de codigo abaixo, isso seria a regra do parametro do if;
+            {
+                throw new ArgumentOutOfRangeException(); //throw - Ele seria uma excessão manual; new - informando que vai ser criado um novo objeto; ArgumentOutOfRangeException() - Seria o nome do erro em especifico, nesse caso se der um erro fora do permitido pelo if.
+            }
+            resultado = numero + resultado;  //resultado - Seria o nome da variavel; numero - Seria o nome da variavel; Nesse caso estou usando a variavel resultado que tem 0 na informação, para fazer a soma da variavel numero com a do resultado(que seria dela mesmo), ficando de exemplo se o usuario colocasse 5 ficaria 5+0 e o resultado da conta vai ser guradada na variavel resultado, e assim acrescentando outros resultados que forem colocados na variavel numero.
+        }
+
+        Console.WriteLine(resultado); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console. Nesse caso ele vai mandar a informação guardada na variavel resultado;
+
+
+    }
+    catch (ArgumentOutOfRangeException) //catch - Seria um completo do try, aqui ele especifica a exceção na regra dentro do parametros do mesmo; () - Seria o parametro; ArgumentOutOfRangeException - Seria o nome da exceção, esse se der o erro de não estiver dentro do permitido, ele vai passar essa informação. Nesse caso o catch ele vai usar a regra que esta dentro do parametro e ela esta usando o throw que esta dentro do if para informar aonde é o dentro do permitido, por isso fiz manualmente, então a regra basicamente seria primeiro do parametro do if e depois passaria para a regra dentro do parametro desse catch, executando o bloco de codigo abaixo.
+    {
+        Console.WriteLine("Erro: Esse número não é inteiro!!"); //Console.WriteLine - Seria uma mensagem enviada para o usuario no console; Nesse caso ele vai infomar que não pode colocar numero negativo;
+    }
+    catch (FormatException) //Catch - Seria um complemento do try, onde ele vai usar a regra dele que fica dentro do parametro para detectar um erro especifico que vai ser informado pelo try; () - parametro do catch; FormatException - Seria o nome do erro especifico, esse basicamente seria erro de formato ele esta vendo que tem um tipo de dado int na variavel numero, se o usuario colocar string que seria letra ele vai informar que esta errado;
+    {
+        Console.WriteLine("Erro: A informação passada não é um número inteiro!!!"); // Console.WriteLine - Aqui vai mandar uma mensagem para o usuario no console. Nesse caso ele vai informar que só pode numero inteiro.
+    }
+} while (numero < 0); //While - Ele vai ajudar com a sua regra que fica no parametro dele o DO, pra identificar se continua a executar o codigo ou para, dentro do parametro tem uma regra, se o codigo executar e essa regra der verdadeira com o resultado de toda a execução do codigo ele vai continuar rodando, se der falasa ele para de rodar o codigo;*/
+

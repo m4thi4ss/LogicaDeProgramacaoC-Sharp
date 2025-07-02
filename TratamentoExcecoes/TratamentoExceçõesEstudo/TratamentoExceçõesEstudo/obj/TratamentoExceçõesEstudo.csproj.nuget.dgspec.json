@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silva\\source\\repos\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj": {}
+    "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\TratamentoExcecoes\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silva\\source\\repos\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj": {
+    "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\TratamentoExcecoes\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silva\\source\\repos\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj",
+        "projectUniqueName": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\TratamentoExcecoes\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj",
         "projectName": "TratamentoExceçõesEstudo",
-        "projectPath": "C:\\Users\\silva\\source\\repos\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj",
+        "projectPath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\TratamentoExcecoes\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo.csproj",
         "packagesPath": "C:\\Users\\silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silva\\source\\repos\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\obj\\",
+        "outputPath": "C:\\Users\\silva\\Documents\\OneDrive\\Documentos\\ESTUDOS\\Estudo_Logica_de_pg_c#\\TratamentoExcecoes\\TratamentoExceçõesEstudo\\TratamentoExceçõesEstudo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
