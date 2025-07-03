@@ -252,46 +252,170 @@ do
 }
 while (numero1 <= 0 || numero1 > 100);*/
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    /*### **5. Soma de Números**
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*### **5. Soma de Números**
 
-    Crie um programa que peça ao usuário para inserir 5 números e some-os. Use `try/catch` para lidar com entradas inválidas.
+Crie um programa que peça ao usuário para inserir 5 números e some-os. Use `try/catch` para lidar com entradas inválidas.
 
-    **Erros a serem tratados:**
+**Erros a serem tratados:**
 
-    -Usuário digitar um valor não numérico. (`FormatException`)
-    - Usuário inserir um número negativo. (`ArgumentOutOfRangeException`)
+-Usuário digitar um valor não numérico. (`FormatException`)
+- Usuário inserir um número negativo. (`ArgumentOutOfRangeException`)
 
-    int numero = 0; //int - Seria o tipo de dado da variavel; numero - Seria o nome da variavel; Aqui ele esta pra fora, por que não pode colocar uma variavel dentro do DO, se não ele vai apagar as informações toda vez que for executado.
+int numero = 0; //int - Seria o tipo de dado da variavel; numero - Seria o nome da variavel; Aqui ele esta pra fora, por que não pode colocar uma variavel dentro do DO, se não ele vai apagar as informações toda vez que for executado.
 int resultado = 0; //int - Seria o tipo de dado da variavel; resultado - Seria o nome da variavel; Nesse caso ele esta pra fora, por que dentro do DO toda vez que o bloco de codigo fosse executado as informações guardadas seria apagadas. 
 
 do //Do - Ele seria um laço de repetição onde tudo que estiver dentro dele vai ser executado até o while der falso.
 {
-    try //try - Ele vai testar o bloco de codigo dele, se aparecer algum erro e o catch tiver esse erro dentro da regra dele que fica no parametro daquele catch ele vai rodar o bloco de codigo daquele catch em especifico;
+try //try - Ele vai testar o bloco de codigo dele, se aparecer algum erro e o catch tiver esse erro dentro da regra dele que fica no parametro daquele catch ele vai rodar o bloco de codigo daquele catch em especifico;
+{
+
+    for (int i = 1; i <= 5; i++) //for - Ele seria uma estrutura de repetição que tem o inicio e usa o incremento de 1 pra chegar no final do i; () - Seria o parametro; int - Seria o tipo de dado da variavel que vai dentro do parametro do for; i = 1 - Seria o inicio da estrutura repetição do for; i <= 5 - Seria o final da estrutura de repetição do for; i++ - Seria como ele vai fazer pra chegar do inicio ao fim, incremento +1; Sendo assim o for ele vai utilizado para repetir o console writeLine 5 vezes.
     {
-        
-        for (int i = 1; i <= 5; i++) //for - Ele seria uma estrutura de repetição que tem o inicio e usa o incremento de 1 pra chegar no final do i; () - Seria o parametro; int - Seria o tipo de dado da variavel que vai dentro do parametro do for; i = 1 - Seria o inicio da estrutura repetição do for; i <= 5 - Seria o final da estrutura de repetição do for; i++ - Seria como ele vai fazer pra chegar do inicio ao fim, incremento +1; Sendo assim o for ele vai utilizado para repetir o console writeLine 5 vezes.
+        Console.WriteLine("Me informe um número: "); //Console.WriteLine - Ele serve para mostrar uma mensagem na tela do usuario. Nesse caso ele vai solicitar os numero;
+        numero = int.Parse(Console.ReadLine()); // numero - Seria a variavel que esta fora do DO, que vai guardar as informações do usuario; int.Parse - Aqui ele vai avisar que a variavel tem o tipo de dado int; Console.ReadLine - Aqui ele vai ler a informação da variavel numero e vai transformar de string para int;
+        if (numero < 0) //if - Ele seria o SE, sendo usado para SE a informação estiver dentro da regra do parametro dele, ele vai rodar o bloco de codigo abaixo;() - Seria o parametro; numero < 0 - Aqui esta informando que SE a variavel numero for menor que 0 ele vai rodar o bloco de codigo abaixo, isso seria a regra do parametro do if;
         {
-            Console.WriteLine("Me informe um número: "); //Console.WriteLine - Ele serve para mostrar uma mensagem na tela do usuario. Nesse caso ele vai solicitar os numero;
-            numero = int.Parse(Console.ReadLine()); // numero - Seria a variavel que esta fora do DO, que vai guardar as informações do usuario; int.Parse - Aqui ele vai avisar que a variavel tem o tipo de dado int; Console.ReadLine - Aqui ele vai ler a informação da variavel numero e vai transformar de string para int;
-            if (numero < 0) //if - Ele seria o SE, sendo usado para SE a informação estiver dentro da regra do parametro dele, ele vai rodar o bloco de codigo abaixo;() - Seria o parametro; numero < 0 - Aqui esta informando que SE a variavel numero for menor que 0 ele vai rodar o bloco de codigo abaixo, isso seria a regra do parametro do if;
+            throw new ArgumentOutOfRangeException(); //throw - Ele seria uma excessão manual; new - informando que vai ser criado um novo objeto; ArgumentOutOfRangeException() - Seria o nome do erro em especifico, nesse caso se der um erro fora do permitido pelo if.
+        }
+        resultado = numero + resultado;  //resultado - Seria o nome da variavel; numero - Seria o nome da variavel; Nesse caso estou usando a variavel resultado que tem 0 na informação, para fazer a soma da variavel numero com a do resultado(que seria dela mesmo), ficando de exemplo se o usuario colocasse 5 ficaria 5+0 e o resultado da conta vai ser guradada na variavel resultado, e assim acrescentando outros resultados que forem colocados na variavel numero.
+    }
+
+    Console.WriteLine(resultado); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console. Nesse caso ele vai mandar a informação guardada na variavel resultado;
+
+
+}
+catch (ArgumentOutOfRangeException) //catch - Seria um completo do try, aqui ele especifica a exceção na regra dentro do parametros do mesmo; () - Seria o parametro; ArgumentOutOfRangeException - Seria o nome da exceção, esse se der o erro de não estiver dentro do permitido, ele vai passar essa informação. Nesse caso o catch ele vai usar a regra que esta dentro do parametro e ela esta usando o throw que esta dentro do if para informar aonde é o dentro do permitido, por isso fiz manualmente, então a regra basicamente seria primeiro do parametro do if e depois passaria para a regra dentro do parametro desse catch, executando o bloco de codigo abaixo.
+{
+    Console.WriteLine("Erro: Esse número não é inteiro!!"); //Console.WriteLine - Seria uma mensagem enviada para o usuario no console; Nesse caso ele vai infomar que não pode colocar numero negativo;
+}
+catch (FormatException) //Catch - Seria um complemento do try, onde ele vai usar a regra dele que fica dentro do parametro para detectar um erro especifico que vai ser informado pelo try; () - parametro do catch; FormatException - Seria o nome do erro especifico, esse basicamente seria erro de formato ele esta vendo que tem um tipo de dado int na variavel numero, se o usuario colocar string que seria letra ele vai informar que esta errado;
+{
+    Console.WriteLine("Erro: A informação passada não é um número inteiro!!!"); // Console.WriteLine - Aqui vai mandar uma mensagem para o usuario no console. Nesse caso ele vai informar que só pode numero inteiro.
+}
+} while (numero < 0); //While - Ele vai ajudar com a sua regra que fica no parametro dele o DO, pra identificar se continua a executar o codigo ou para, dentro do parametro tem uma regra, se o codigo executar e essa regra der verdadeira com o resultado de toda a execução do codigo ele vai continuar rodando, se der falasa ele para de rodar o codigo;
+int numero1 = 0;
+int resultado1 = 0;
+
+do
+{
+    try
+    {
+        for (int i = 1; i < 6; i++)
+        {
+            Console.WriteLine($"Me informe o {i}° número: ");
+
+            numero1 = int.Parse(Console.ReadLine());
+
+            if (numero1 < 0)
             {
-                throw new ArgumentOutOfRangeException(); //throw - Ele seria uma excessão manual; new - informando que vai ser criado um novo objeto; ArgumentOutOfRangeException() - Seria o nome do erro em especifico, nesse caso se der um erro fora do permitido pelo if.
+                throw new ArgumentOutOfRangeException();
             }
-            resultado = numero + resultado;  //resultado - Seria o nome da variavel; numero - Seria o nome da variavel; Nesse caso estou usando a variavel resultado que tem 0 na informação, para fazer a soma da variavel numero com a do resultado(que seria dela mesmo), ficando de exemplo se o usuario colocasse 5 ficaria 5+0 e o resultado da conta vai ser guradada na variavel resultado, e assim acrescentando outros resultados que forem colocados na variavel numero.
+
+            resultado1 = numero1 + resultado1;        
+        }
+        Console.Write($"Resultado:{resultado1}");
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Erro: Somente números!!! ");
+    }
+    catch (ArgumentOutOfRangeException)
+    {
+        Console.WriteLine("Erro: Somente números inteiros!!!");
+    }
+}while (numero1 < 0) ;*/
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*### **6. Validação de Senha**
+
+Crie um programa que solicite ao usuário uma senha e permita até 3 tentativas. Caso a senha esteja errada, informe quantas tentativas restam.
+
+**Erros a serem tratados:**
+
+-Usuário digitar um valor nulo ou vazio. (`ArgumentNullException`)*/
+
+
+string senha = ""; //string - Seria o tipo de dado da variavel;
+                   //senha - Seria o nome da variavel;
+                   //Nesse caso esta criando uma variavel fora do dor pra não dar erro, pois se colocar dentro do for, cada vez que fosse solicitado uma nova senha a informação que foi guardada anteriormente se perderia, e ela esta com o tipo de dado string por que a senha vai ter caracteres, números e letras.
+
+string novaSenha = ""; //string - Seria o tipo de dado da variavel;
+                       //novaSenha - Seria o nome da variavel;
+                       //Nesse caso essa variavel vai ser usada quando o usuario vai criar a senha, para que a variavel senha use essa como base pra verificar se está certa ou errada, ela esta pra fora por que se estiver dentro do while toda vez que for informado pelo usuario a senha o while vai apagar a informação, é string por que vai ser usado números, caracteres e letras.
+
+
+
+
+while (string.IsNullOrWhiteSpace(novaSenha)) //while - Ele seria quase mesma coisa que o DO WHILE, só que o while ~ele não executa o bloco de codigo ele ja vai direto e reto, e o do while ele da pelo menos uma excutada no bloco de codigo, sendo assim se tiver uma informação na variavel novaSenha o while vai considerar ela e ja vai para ou continudar o bloco de codigo, ja o DO WHILE ele vai executar uma vez pelo menos e aquela informação passada nessa uma vez que for executada ele vai considerar essa informação e vai esquecer a informação que ja tinha na variavel novaSenha.
+                                             //() - Seria o parametro e o que esta dentro e  regra;
+                                             //string.IsNullOrWhiteSpace - Aqui esta usando uma função do tratamento de exceção, essa em especifico ela vai aparecer caso o usuario coloque nada no campo;
+                                             //(novaSenha) - E essa variavel que vai ser usada.
+                                             //Sendo assim usou o WHILE pra caso tenha uma informação dentro da variavel ele vai usar essa informação e como a informação dentro da variavel novaSenha esta vazia ele vai ser obrigado a executar o codigo, e usamos o string.IsNullOrWhiteSpace para caso o usario não coloque nada no campo que vai passar uma informação para variavel, ele vai rodar o bloco de codigo novamente, até o usuario informar a senha correta.
+{
+    Console.Write("Nova senha:"); //Console.Write - Seria uma mensagem que é enviada no console, como não o Line ele vai escrever tudo em uma linha só;
+                                  //Nesse caso ele vai solicitar a nova senha;
+
+    novaSenha = Console.ReadLine(); //novaSenha - Seria a variavel;
+                                    //ConsoleReadLine() - Aqui ele vai ler a informação e vai transformar em string;
+                                    //Nesse caso criou um Console.Write para solicitar a nova senha, e essa informação vai ser guardada na varivel novaSenha essa variavel vai ser um tipo de dado string por que vai usar numero, letra e caracteres usando o console ReadLine só pra confirmar que vai ser string o tipo de dado. 
+
+    if (string.IsNullOrWhiteSpace(novaSenha))//if - Ele seria o SE, SE a informação passada da variavel que esta na regra e dentro do parametro dele seguindo os procedimentos que ele informou na regra, ele vai rodar o bloco de codigo abaixo, caso ao contrario ele vai continuar rodando o bloco de codigo fora do if. () -parametro e o que esta dentro e a regra; string.IsNullOrWhiteSpace - Esta informando que tipo de tratamento de exceção vai ser e nesse caos vai ser o de campo vazio; (novaSenha) - Seria a variavel que vai ser usada para o tratamento de exceção por isso que esta dentro do paramentro do tratamento de exceção.
+    {
+        Console.WriteLine("Erro: Não pode ser vazia."); //Console.WriteLine - Ele manda uma mensagem para o usuario no console, nesse caso ele vai informar que o campo não pode ser vazio.
+
+    }
+}
+
+    Console.WriteLine("Senha cadastrada com sucesso!"); //Console.WriteLine - Aqui seria uma mensagem que é enviada para o usuario na tela, nesse caso se o bloco rodar corretamente e o while de falso ele vai informar que a senha foi cadastrada.
+
+
+int tentativas = 3; //int - Seria o tipo de dado da variavel; tentativas - Seria o nome da variavel. Nesse caso seria uma variavel chamada tentativas que tem o tipo de dado int, ela esta pra fora do bloco de codigo onde vai ser usada, por que a informação que vai vim dentro dela não pode ser apagada pelo for, e ja vem com 3 por que só podem ser 3 tentativas.
+
+    for (int i = 1; i <= 3; i++) //for - Ele é um laço de repetição onde tem o inicio e fim e caso seja necessario ler entre o inicio e fim da regra dele ele usa o icremento que seria o i++; int - Seria o tipo de dado da variavel que vai no for; i = 1 - Seria o inicio; i <= 3 - Seria o fim; i++ - Seria o icremento de +1; Nesse caso usou o for que tem o parametro e dentro dele tem a regra informando que o bloco de comando vai ser excecutado do 1 ao 3, e pra percorrer entre o inicio e o fim usou o i++ que seria o icremento de +1.
+    {
+        try //try - Ele seria um tratamento de exceção, onde ele vai testar todo bloco de codigo e se aparecer um erro que se indentifica com as regras dos catch dele, ao inves dele continuar executando o codigo, ele vai parar e vai excutar o bloco de codigo daquele cactch que a regra se indetifica com o erro informado pelo try;
+        {
+            Console.Write("Me informe a senha:"); //Console.Write - Seria uma mensagem na mesma linha que é enviada para o usuario no console. Nesse caso ele está solicitando a senha;
+            senha = Console.ReadLine(); //senha - Seria o nome da variavel; Console.ReadLine - Aqui ele vai confirmar que é uma string; Nesse caso foi criado uma variavel para guardar a informação que for passada pelo usuario da pergunta do WriteLine e essa variavel vai se senha e tem o tipo de dado string, a criação dela esta la fora pra não perder o valor dela, como o tipo de dado é uma string usou somente o ReadLine pra confirmar.
+
+            if (string.IsNullOrWhiteSpace(senha)) //if - Ele seria o SE, SE a variavel que esta na regra dele seguir os mesmo procedimentos da regra ele executa o bloco de codigo dele; string.IsNullOrWhiteSpace - Aqui seria o nome do tratamento de exeção, nesse caso se o campo informado na variavel dentro do parametro for vazio ele vai executar o bloco de cacth do catch do try que esta em especifico na sua regra essa exceção;() - parametro e dentro seria a regra; senha - variavel;
+        {
+                throw new ArgumentNullException(); //throw - Ele seria um tratamento de exceção manual; new - Esta informando que vai ser criado um novo objeto; ArgumentNullException - Seria o tipo de tratamento de exceção em especifico; Nesse caso esta sendo criado um tratamento de exceção manualmente por isso do throw onde ele vai criar um novo objeto que seria o tipo de exceção, onde SE o if for acionado ele vai lançar essa exceção.
         }
 
-        Console.WriteLine(resultado); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console. Nesse caso ele vai mandar a informação guardada na variavel resultado;
-
-
-    }
-    catch (ArgumentOutOfRangeException) //catch - Seria um completo do try, aqui ele especifica a exceção na regra dentro do parametros do mesmo; () - Seria o parametro; ArgumentOutOfRangeException - Seria o nome da exceção, esse se der o erro de não estiver dentro do permitido, ele vai passar essa informação. Nesse caso o catch ele vai usar a regra que esta dentro do parametro e ela esta usando o throw que esta dentro do if para informar aonde é o dentro do permitido, por isso fiz manualmente, então a regra basicamente seria primeiro do parametro do if e depois passaria para a regra dentro do parametro desse catch, executando o bloco de codigo abaixo.
+            if (senha == novaSenha) //if - Seria o SE, SE a variavel que esta dentro da regra do mesmo e seguindo os mesmo parametros ele vai lançar o seu bloco de codigo; () - Parametro e dentro dele é a regra; senha e novaSenha - Seria as variaveis; == - operador de comparação de igual.
+            {
+                Console.WriteLine("Senha correta!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario. Nesse caso ele vai informa que a senha está correta;
+                break; //break - Seria para parar o codigo e não continuar mandando senha correta toda hora.
+            }
+            else //else - ele seria igual o if, porém ele pega os parametros e as regras que sobraram e se for o parametro e a regra dele ele excuta o bloco de codigo;
+            {
+                tentativas--; //tentativas - Seria variavel; -- = Seria o operador lógica de incremento; Nesse caso ele vai pegar a variavel que tentativas que foi criada fora do for e usou o incremento negativo que seria o -1 para fazer uma contagem regressiva do 3 ao 1.
+                if (tentativas > 0) //if - Seria o SE, SE a variavel que esta dentro do seu parametro na sua regra e a informação guardada seguindo as regras informadas pelo if, ele vai executar o bloco de codigo abaixo;
+                                    //()- Parametro e dentro dele seria a regra;
+                                    //tentativas - Seria a variavel;
+                                    //> - Seria o operador lógico de maior;
+                                    //Nesse caso ele vai usar o if para informar que SE a variavel tentativa estiver maior que 0 ela vai continuar rodando o bloco de codigo dela.
+                {
+                    Console.WriteLine($"A senha está incorreta! Restam {tentativas} tentativas.");//Console.WriteLine - Seria uma mensagem que é enviada no console.
+                                                                                                  //Nesse caso ele vai mandar uma mensagem para o usuario informando quantas tentativas resta; 
+                }
+                else //else - Seria igual o if, mas o parametro e a regra dele seria o resto dos parametros e das regras que ja foram criadas pelos if e os else if;
+                     //Nesse caso se o numero for igual a 0, ele vai mandar o bloco de codigo abaixo.
+                {
+                    Console.WriteLine("Acabou as tentativas!!!");//Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console.
+                                                                 //Nesse caso ele vai mandar uma mensagem informando que a acabou as tentativas;
+                }
+            }
+        }
+        catch (ArgumentNullException)//Catch - Esse seria o catch, ele auxilia o try pra especificar o erro especifico;
+                                     //() - argumento e dentro dele seria a regra;
+                                     //ArgumentNullException - Seria o tratamento de exceção especifico;
+                                     //Nesse caso foi criado um tratamento de exceção para fora do permitido, ele pega o throw manual que foi criado no if;
     {
-        Console.WriteLine("Erro: Esse número não é inteiro!!"); //Console.WriteLine - Seria uma mensagem enviada para o usuario no console; Nesse caso ele vai infomar que não pode colocar numero negativo;
+            Console.WriteLine("Erro: O campo não pode estar vazio!"); //Console.WriteLine - ELe manda uma mensagem para o usuario no console.
+                                                                      //Nesse caso ele vai informar que o campo vazio não pode ser colocado na senha;
+        }
     }
-    catch (FormatException) //Catch - Seria um complemento do try, onde ele vai usar a regra dele que fica dentro do parametro para detectar um erro especifico que vai ser informado pelo try; () - parametro do catch; FormatException - Seria o nome do erro especifico, esse basicamente seria erro de formato ele esta vendo que tem um tipo de dado int na variavel numero, se o usuario colocar string que seria letra ele vai informar que esta errado;
-    {
-        Console.WriteLine("Erro: A informação passada não é um número inteiro!!!"); // Console.WriteLine - Aqui vai mandar uma mensagem para o usuario no console. Nesse caso ele vai informar que só pode numero inteiro.
-    }
-} while (numero < 0); //While - Ele vai ajudar com a sua regra que fica no parametro dele o DO, pra identificar se continua a executar o codigo ou para, dentro do parametro tem uma regra, se o codigo executar e essa regra der verdadeira com o resultado de toda a execução do codigo ele vai continuar rodando, se der falasa ele para de rodar o codigo;*/
+
 
