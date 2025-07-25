@@ -335,7 +335,7 @@ Crie um programa que solicite ao usuário uma senha e permita até 3 tentativas.
 -Usuário digitar um valor nulo ou vazio. (`ArgumentNullException`)*/
 
 
-string senha = ""; //string - Seria o tipo de dado da variavel;
+/*string senha = ""; //string - Seria o tipo de dado da variavel;
                    //senha - Seria o nome da variavel;
                    //Nesse caso esta criando uma variavel fora do dor pra não dar erro, pois se colocar dentro do for, cada vez que fosse solicitado uma nova senha a informação que foi guardada anteriormente se perderia, e ela esta com o tipo de dado string por que a senha vai ter caracteres, números e letras.
 
@@ -379,34 +379,34 @@ int tentativas = 3; //int - Seria o tipo de dado da variavel; tentativas - Seria
             senha = Console.ReadLine(); //senha - Seria o nome da variavel; Console.ReadLine - Aqui ele vai confirmar que é uma string; Nesse caso foi criado uma variavel para guardar a informação que for passada pelo usuario da pergunta do WriteLine e essa variavel vai se senha e tem o tipo de dado string, a criação dela esta la fora pra não perder o valor dela, como o tipo de dado é uma string usou somente o ReadLine pra confirmar.
 
             if (string.IsNullOrWhiteSpace(senha)) //if - Ele seria o SE, SE a variavel que esta na regra dele seguir os mesmo procedimentos da regra ele executa o bloco de codigo dele; string.IsNullOrWhiteSpace - Aqui seria o nome do tratamento de exeção, nesse caso se o campo informado na variavel dentro do parametro for vazio ele vai executar o bloco de cacth do catch do try que esta em especifico na sua regra essa exceção;() - parametro e dentro seria a regra; senha - variavel;
-        {
+            {
                 throw new ArgumentNullException(); //throw - Ele seria um tratamento de exceção manual; new - Esta informando que vai ser criado um novo objeto; ArgumentNullException - Seria o tipo de tratamento de exceção em especifico; Nesse caso esta sendo criado um tratamento de exceção manualmente por isso do throw onde ele vai criar um novo objeto que seria o tipo de exceção, onde SE o if for acionado ele vai lançar essa exceção.
-        }
+            }
 
-            if (senha == novaSenha) //if - Seria o SE, SE a variavel que esta dentro da regra do mesmo e seguindo os mesmo parametros ele vai lançar o seu bloco de codigo; () - Parametro e dentro dele é a regra; senha e novaSenha - Seria as variaveis; == - operador de comparação de igual.
+            else if (senha == novaSenha) //if - Seria o SE, SE a variavel que esta dentro da regra do mesmo e seguindo os mesmo parametros ele vai lançar o seu bloco de codigo; () - Parametro e dentro dele é a regra; senha e novaSenha - Seria as variaveis; == - operador de comparação de igual.
             {
-                Console.WriteLine("Senha correta!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario. Nesse caso ele vai informa que a senha está correta;
-                break; //break - Seria para parar o codigo e não continuar mandando senha correta toda hora.
+                    Console.WriteLine("Senha correta!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario. Nesse caso ele vai informa que a senha está correta;
+                    break; //break - Seria para parar o codigo e não continuar mandando senha correta toda hora.
             }
-            else //else - ele seria igual o if, porém ele pega os parametros e as regras que sobraram e se for o parametro e a regra dele ele excuta o bloco de codigo;
-            {
-                tentativas--; //tentativas - Seria variavel; -- = Seria o operador lógica de incremento; Nesse caso ele vai pegar a variavel que tentativas que foi criada fora do for e usou o incremento negativo que seria o -1 para fazer uma contagem regressiva do 3 ao 1.
-                if (tentativas > 0) //if - Seria o SE, SE a variavel que esta dentro do seu parametro na sua regra e a informação guardada seguindo as regras informadas pelo if, ele vai executar o bloco de codigo abaixo;
-                                    //()- Parametro e dentro dele seria a regra;
-                                    //tentativas - Seria a variavel;
-                                    //> - Seria o operador lógico de maior;
-                                    //Nesse caso ele vai usar o if para informar que SE a variavel tentativa estiver maior que 0 ela vai continuar rodando o bloco de codigo dela.
+             else //else - ele seria igual o if, porém ele pega os parametros e as regras que sobraram e se for o parametro e a regra dele ele excuta o bloco de codigo;
                 {
-                    Console.WriteLine($"A senha está incorreta! Restam {tentativas} tentativas.");//Console.WriteLine - Seria uma mensagem que é enviada no console.
-                                                                                                  //Nesse caso ele vai mandar uma mensagem para o usuario informando quantas tentativas resta; 
+                    tentativas--; //tentativas - Seria variavel; -- = Seria o operador lógica de incremento; Nesse caso ele vai pegar a variavel que tentativas que foi criada fora do for e usou o incremento negativo que seria o -1 para fazer uma contagem regressiva do 3 ao 1.
+                    if (tentativas > 0) //if - Seria o SE, SE a variavel que esta dentro do seu parametro na sua regra e a informação guardada seguindo as regras informadas pelo if, ele vai executar o bloco de codigo abaixo;
+                                        //()- Parametro e dentro dele seria a regra;
+                                        //tentativas - Seria a variavel;
+                                        //> - Seria o operador lógico de maior;
+                                        //Nesse caso ele vai usar o if para informar que SE a variavel tentativa estiver maior que 0 ela vai continuar rodando o bloco de codigo dela.
+                    {
+                        Console.WriteLine($"A senha está incorreta! Restam {tentativas} tentativas.");//Console.WriteLine - Seria uma mensagem que é enviada no console.
+                                                                                                      //Nesse caso ele vai mandar uma mensagem para o usuario informando quantas tentativas resta; 
+                    }
+                    else //else - Seria igual o if, mas o parametro e a regra dele seria o resto dos parametros e das regras que ja foram criadas pelos if e os else if;
+                         //Nesse caso se o numero for igual a 0, ele vai mandar o bloco de codigo abaixo.
+                    {
+                        Console.WriteLine("Acabou as tentativas!!!");//Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console.
+                                                                     //Nesse caso ele vai mandar uma mensagem informando que a acabou as tentativas;
+                    }
                 }
-                else //else - Seria igual o if, mas o parametro e a regra dele seria o resto dos parametros e das regras que ja foram criadas pelos if e os else if;
-                     //Nesse caso se o numero for igual a 0, ele vai mandar o bloco de codigo abaixo.
-                {
-                    Console.WriteLine("Acabou as tentativas!!!");//Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console.
-                                                                 //Nesse caso ele vai mandar uma mensagem informando que a acabou as tentativas;
-                }
-            }
         }
         catch (ArgumentNullException)//Catch - Esse seria o catch, ele auxilia o try pra especificar o erro especifico;
                                      //() - argumento e dentro dele seria a regra;
@@ -417,5 +417,298 @@ int tentativas = 3; //int - Seria o tipo de dado da variavel; tentativas - Seria
                                                                       //Nesse caso ele vai informar que o campo vazio não pode ser colocado na senha;
         }
     }
+//(teste no bloco de notas abaixo)
+string senha1 = "";
+string novaSenha1 = "";
+
+while (string.IsNullOrWhiteSpace(novaSenha1))
+{
+    Console.Write("Me informe a senha: ");
+    novaSenha1 = Console.ReadLine();
+
+    if (string.IsNullOrWhiteSpace(novaSenha1))
+    {
+        Console.WriteLine("O campo nova senha não pode ser vazio!!!");
+    }
+}
+
+Console.WriteLine("Senha cadastrada com sucesso!!!");
+
+int tentativa1 = 3;
+
+for (int i = 1; i <= 3; i++)
+{
+    try
+    {
+        Console.Write("Me informe a senha:");
+        senha1 = Console.ReadLine();
+
+        
+        if (senha1 == novaSenha1)
+        {
+            Console.WriteLine("Senha correta!!!");
+            break;
+        }
+        else
+        {
+            tentativa1--;
+            if (string.IsNullOrWhiteSpace(senha1) && tentativa1 > 0)
+            {
+                throw new ArgumentNullException();
+            }
+            else if (tentativa1 > 0)
+            {
+                Console.WriteLine($"Senha incorreta. Restam {tentativa1} tentativas!!!");
+            }
+            else
+            {
+                Console.WriteLine("Acabou as tentativas!!!");
+            }
+        }
+    }
+    catch (ArgumentNullException)
+    {
+        Console.WriteLine($"O campo não pode ser vazio! Restam {tentativa1} tentativas");
+    }
+}
+*/
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*9.Menu de Opções com Tratamento de Erros
+Crie um programa que exiba um menu com opções:
+1 - Somar dois números
+2 - Subtrair dois números
+3 - Multiplicar dois números
+4 - Sair
+**Erros a serem tratados:**
+
+- Usuário digitar um valor não numérico. (`FormatException`)
+- Usuário escolher uma opção inválida. (`ArgumentException`)
+
+int num = 0; //int - O int seria o tipo de dado da variavel;
+             //num - Seria o nome da variavel;
+             //= 0 - É o valor da variavel;
+             //sendo atribuido para a variavel. Sendo assim a variavel foi criada para fazer com que o Do funcionasse corretamente, por esse motivo ele foi criado aqui fora, se fosse la dentro ele iria ficar apagando a cada vez que o laço de repetição se concluisse.
+int num1 = 0;// int - Seria um tipo de dado da variavel;
+             // num1 - Seria o nome da variavel;
+             // = 0 - Seria o valor atribuido para aquela variavel;
+             // Sendo atribuido para a variavel. Sendo assim a variavel foi criada para fazer com que o Do funcionasse corretamente, por esse motivo ele foi criado aqui fora, se fosse la dentro ele iria ficar apagando a cada vez que o laço de repetição se concluisse.
+int num2 = 0;// int - Seria o tipo de dado da variavel;
+             // num2 - Seria o nome da variavel;
+             // = 0 - Seria o valor que esta sendo atribuido para a variavel.
+             // Sendo assim a variavel foi criada para fazer com que o Do funcionasse corretamente, por esse motivo ele foi criado aqui fora, se fosse la dentro ele iria ficar apagando a cada vez que o laço de repetição se concluisse.
+int resultado = 0;//int - Seria o tipo de dado da variavel;
+                  //resultado - Seria o nome da variavel; = 0 - Seria o valor atribuido para a variavel;
+                  //Sendo assim ela esta fora do laço de repetição do DO, para não perder as informações que forem gravadas nela, e será usada, para obter os resultados das contas.
+
+
+do //O DO seria um laço de repetição, onde ele executa pelo menos uma vez, caso tenha um valor atribuido para uma variavel, ele não vai considerar esse valor, ele vai derrubar ele e vai colocar o valor novo que foi informado na execução do laço. Sendo assim ele seria um laço de reptição que precisa do While para informar os parametros e regras dele e que executa pelo menos uma vez, mesmo com valor atribuido para as variaveis.
+{
+    try //TRY - Seria um tratamento de exceção, onde ele vai rodar o bloco de codigo abaixo, se ele ve que tem um erro que esta na regra do parametro do catch ele vai para o bloco de codigo na hora e vai rodar o bloco de codigo do catch que tem aquela regra no parametro dele. 
+    {
+        Console.WriteLine($"Menu de Opções: \n1 - Somar dois números\n2 - Subtratir dois númeors\n3 - Mutiplicar dois números\n4 - Sair");  //Console.WriteLine - Ele manda uma mensagem para o console, nesse caso ele pula uma    linha por conta do line.
+                                //Aqui ele esta sendo usado para informar um menu para o usuario ve no console.
+        num = int.Parse(Console.ReadLine()); //num - Seria a variavel que foi criada antes do DO;
+                                             //int.Parse - Aqui ele esta sendo usado para informar que será usado um int e não uma string;
+                                             //Console.ReadLine() - Aqui ele vai ser usado para ler a informação que vai ser atribuida para a variavel e vai transformar de string para int.
+                                             //Sendo assim essa variavel foi criada para guardar a informação que o usuario passar sobre o menu, usando um tipo de dado int e como foi usado esse tipo de dado vou usar o int.Parse para avisar que vai ser um int e não uma string, e finalizando com o ReadLine onde ele vai ler a informação que vai ser passada e vai transformar em int ao invés de string.
+
+        if (num == 1) // if - Ele é usado para SE, exemplo: SE a informação for essa roda meu bloco de codigo. E a ~regra dele fica dentro do parametro, onde ele informa SE for tal coisa;
+                      // () - Parametro e o que esta dentro dele seria a regra;
+                      // num == 1 - Aqui esta informa num tem que ser == igual a 1;
+                      // Sendo assim SE num for igual a 1 o IF vai rodar o bloco de cosigo atribuido a ele.
+        {
+            Console.Write("Me informe o primeiro numero:"); //Console.Write - Ele mostra uma mensagem para o usuario no console, como só tem o write ele vai fazer tudo em uma linha só.
+                                                            //Nesse caso ele perguntou o primeiro numero para o usuario.
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria a varivel que foi feita antes do DO;
+                                                  //int.Parse - Aqui esta informando que vai ser um int e não uma string;
+                                                  //Console.ReadLine() - Nesse caso ele vai ler a informação e vai transformar a mesma de string para int.
+                                                  //Sendo assim aqui vai ser utilizado um variavel que foi criada antes do DO pra não perder a informação na execução do laço de repetição, e como foi informado lá que o tipo de dado dela vai ser int,usei o int.Parse para avisar e usei o ReadLine para ler a informação e transformar de string para int, assim ele vai guardar o primeiro número informado pelo usuario corretamente.
+
+            Console.Write("Me informe o segundo número:"); //Console.Write - Aqui ele vai ser usado para mandar uma mensagem para o usuario no console, como não o Line ele vai fazer tudo na mesma linha.
+                                                           //Nesse caso ele está solicitando o segundo número.
+            num2 = int.Parse(Console.ReadLine()); //num2 - Seria o nome da variavel que foi criada antes do DO;
+                                                  //int.Parse - Ele vai ser utilizado para informar que vai ser um tipo de dado int e não uma string.
+                                                  //Console.ReadLine - Aqui ele está usando para ler a informação que vai ser passada e transformar de string para int.
+                                                  //Sendo assim ele está usando uma variavel fora do laço de reptição do DO, para não perder a informação que foi passada, como o tipo de dado informado vai ser int, teve que usar o int.Parse para informar que não vai ser string e sim int, e usei o ReadLine para ler a informação que for passada e vai trasnformar a mesma de string para int, fazendo com que guarde a informação do usuario corretamente.
+
+            resultado = num1 + num2; //resultado - Seria a variavel que foi criada fora do laço de repetição;
+                                     //num 1 e num2 - Seria a variavel que foi criada fora do laço e que tem explicação completa acima;
+                                     //= - Seria resultado;
+                                     //+ - operador lógico de soma; Sendo assim foi criado uma variavel chamada resultado fora do laço de repetição para que quando ela fosse executada não perdesse a informação da variavel, ela vai ser usada para guardar o resultado da soma da variavel num1 e num2.
+
+            Console.WriteLine($"Segue resultado da conta {resultado}"); //Console.WriteLine - Seria uma mensagem que vai ser envaida para o usuario no console, como tem o Line ele vai pular a linha.
+                                                                        //Nesse caso ele vai mostrar o valor que foi atribuido a variavel resultado.
+        }
+        else if (num == 2) //Else if - Ele seria a mesma coisa que o IF, mas por questão de nomenclatura ele vira o Else if.
+                           //Nesse caso esta informando que SE o num for igual == ao 2 ele vai rodar o bloco de codigo que foi atribuido a ele.
+        {
+            Console.Write("Me informe o primeiro numero:"); //Console.Write - É uma mensagem que é enviada para o usuario no console, como não tem o line ele vai ser na mesma linha.
+                                                            //Nesse caso ele vai solicitar o primeiro número.
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria a variavel que foi criada fora do laço do DO;
+                                                  //int.Parse - Aqui ele vai informar que vai ser um int e não uma string;
+                                                  //Console.ReadLine - Aqui ele vai ler a informação e vai transformar de string para int;
+                                                  //Nesse caso utilizou a variavel num1 que foi criada fora do laço de repetição pra não perder a informação a cada vez que o laço fosse repetido, como o tipo de dado vai ser int, teve que usar o int.Parse para informar que vai ser int e não string e finalizou com o ReadLine para ler a informação e transformar de string para int, fazendo com que guardasse a informação corretamente para não ter problema.
+
+            Console.Write("Me informe o segundo número:"); //Console.write - Aqui ele vai mandar uma informação para o usuario no console, como não tem o Line ele vai fazer tudo em uma linha só.
+                                                           //Nesse caso ele vai solicitar o segundo número.
+            num2 = int.Parse(Console.ReadLine()); //num2 - Seria o nome da variavel que foi criada fora do laço de reptição;
+                                                  //int.Parse - Aqui ele vai informar que o tipo de dado vai ser int e não string;
+                                                  //Console.ReadLine - Aqui ele vai ler a informação e vai transformar de string para int;
+                                                  //Nesse caso vai ser utilizado o num2 que esta fora do laço de repetição DO pra não perder as informações que vão ser guardadas na variavel, como o tipo de dado vai ser int vai ser utilizado o int.Parse para avisar que vai ser int e não string e na finalização usei o Console.ReadLine para ler a informação que foi passado e transformar de string para int. 
+
+            resultado = num1 - num2; //resultado - Seria a variavel que foi criada fora do laço de repetição DO;
+                                     //num1 e num2 - Seria a variavel que vai ser guardada a informação do usuario que foi explicado mais detalhado acima;
+                                     //= - Aqui esta informando resultado;
+                                     //- - Operador lógico de subtração;
+                                     //Sendo assim foi criado o resultado fora do laço de repetição DO, pra não perder a informação que vai ser guardada, e o valor dela vai ser a conta das variaveis num1 e num2.
+            Console.WriteLine($"Segue resultado da conta {resultado}"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console, como tem o Line ele vai pular sempre uma linha;
+                                                                        //Nesse caso ele vai mostrar o valor que foi atribuido para a variavel resultado.
+        }
+        else if (num == 3) //else if - Seria a mesma coisa que o if, mas por questão de nomenclatura ele tem que esta como else if por que ja tem um if;
+                           //() - Parametro; num == 3 - regra do parametro;
+                           //Nesse caso seria o else if esta sendo usado para informar SE o num for igual == ao 3 ele vai rodar o bloco de codigo que foi atribuido a mim.
+        {
+            Console.Write("Me informe o primeiro numero:"); //Console.Write - Seria o uma mensagem que é enviada no console, como não tem o Line vai ser feito tudo na mesma linha;
+                                                            //Nesse caso ele esta solicitando o primeiro numero.
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria a variavel que foi criada fora do laço de repetição DO;
+                                                  //int.Parse - Ele avisa que vai ser um int e não uma string;
+                                                  //Console.ReadLine - Aqui ele vai ler a informação que foi passada pelo usuario e vai transformar de string para int.
+                                                  //Nesse caso utilizou a variavel num1 que está fora do laço de repetição pra não perder a informação em cada execução que for feita pelo DO, como a variavel foi colocado que vai ter o tipo de dado int, usei o int.Parse para avisar e o ReadLine para ler a informação e transformar de string para int, pra guardar a informação corretamente.
+
+            Console.Write("Me informe o segundo número:"); //Console.Write - Aqui ele vai mandar uma mensagem para o usuario no console, como não tem o Line ele vai mandar as informações tudo em uma linha só;
+                                                           //Nesse caso ele esta solicitando o segundo número.
+            num2 = int.Parse(Console.ReadLine()); //num2 - Ele seria a variavel que foi criada fora do laço de repetição;
+                                                  //int.Parse - Aqui ele vai informar que o tipo de dado vai ser um int e não uma string;
+                                                  //Console.ReadLine - Aqui ele vai ler a informação e vai transformar a mesma de string para int;
+                                                  //Nesse caso vai ser usado a variavel num2 que esta fora do laço de repetição do DO para não perder as informações que forem colocados no mesmo, como o tipo de dado vai ser int, usei o int.Parse para a avisar e o Console.ReadLine para ler a informação e transformar de string para int.
+
+            resultado = num1 / num2; //resultado - Seria uma variavel que foi criada for do laço de repetição DO;
+                                     //num1 e num2 - Seria a variavel que guarda a informação que o usuario passou;
+                                     //= - Simbolodo de resultado; / - operador lógico de divisão;
+                                     //Sendo assim foi pego a variavel resultado fora do laço de reptição DO pois em cada excecução que for feito pelo DO no bloco de codigo, a variavel não vai perder a informação que foi guardada, nesse caso o valor da varivel resultado que vai guardar vai se a divisão entre as variaveis num1 e num2.
+            Console.WriteLine($"Segue resultado da conta {resultado}"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console, como tem o line ele não vai ser feito tudo em uma linha só;
+                                                                        //Nesse caso ele vai passar o valor que foi atribuido para a variavel resultado.
+        }
+        else if (num == 4) //else if - Ele seria a mesma coisa que o if, mais por questão de nomenclatura ele vira o else if por que ja tem um if;
+                           //() - Parametro e dentro dele seria a regra;
+                           //num == 4 - Aqui SE o num for igual a 4;
+                           //Nesse caso seria se o SE o num for == igual a 4 ele vai rodar o bloco de código que foi atribuido a ele.
+        {
+            Console.WriteLine("Obrigado!"); //Console.WriteLine - Ele seria uma mensagem que é enviada para o usuario no console, como tem o Line ele vai passar a informação pulando linha;
+                                            //Nesse caso ele vai agradecer ao usuario.
+        }
+        else if (num > 4 || num < 1) // else if - Seria a mesma coisa que o if, mas por questão de nomenclatura ele precisa ser o else if pois ja tem um if; () - parametro e dentro dele seria a regra; num > 4 - Aqui seria num maior que 4; || - ou; num < 1 - num menor que um; Nesse caso o else esta informando que SE num for maior que 4 ou num menor que 1, ele vai gerar o erro abaixo, usando o bloco de codigo do catch que vai ser avisado pelo try;
+        {
+            throw new ArgumentException();//throw - Aqui ele esta informando que vai ser criado um erro manualmente; new - Esta informando que esta sendo criado um novo tratamento de exceção; ArgumetException - Seria o tratamento de exceção, nesse caso se for diferente dos números do menu ele vai lançar; Sendo assim ele esta sendo usado para informar que vai utilizar o bloco de codigo do catch que esta com o parametro que informa o tratamento de exceção;
+        }
+        else //else - Ele pega todas os parametros e regras e verifica o que sobrou, assim que ele pega a regra que sobrou ele fica pra ele, não precisando informar o parametro e nem a regra dele;
+        {
+            throw new FormatException(); //throw - Aqui esta informando que sera feito um tratamento de exceção manualmente; new - Esta informando que vai ser um novo tratamento de exceção; FormatExceprion - Aqui esta informando o tratamento que vai ser usado que vai ser o formato do tipo de dado; Nesse caso esta informando manualmente que sera usado um catch nesse else e que se o try pegar ele vai parar o codigo e vai rodar o catch que tem o parametro de exceção que foi informado no parametro;
+        }
+    }
+    catch (FormatException) //catch - Seria um auxilio ao try, onde ele tem um parametro e dentro dele tem o tratamento de exceção especifico;
+                            //() - Parametro;
+                            //FormatException - Tratamento de exceção especifico;
+    {
+        Console.WriteLine("Erro: Só pode inserir os números inteiros do menu!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario, como tem o Line ele vai quebrar linhas;
+                                                                                   //Nesse caso ele vai informar que o Erro que só pode ser números inteiros;
+    }
+    catch (ArgumentException) //Catch - Seria o aucxiliar do try onde ele tem um parametro e dentro do parametro ele tem um tratamento de exceção especifico, onde ele vai informar olha tem um erro, pode rodar meu bloco de codigo;
+    {
+        Console.WriteLine("Erro: Esse número não existe no menu!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console, como vai ser Line ele vai pular linha; Nesse caso vai informar que não pode colocar letras para o usuario;
+    }
+} while (num > 4 || num < 1); //while - Aqui ele esta auxiliando o DO, criando um parametro onde se o num for maior que 4 ou mnor que 1 ele vai rodar o codigo novamente.
+
+//Solução no bloco de notas
+
+using System;
+
+int num = 0;
+int num1 = 0;
+int num2 = 0;
+int resultado = 0;
+
+do
+{
+    try
+    {
+        Console.WriteLine("Menu \n1 - Somar dois números\n2 - Subtratir dois números\n3 - Multiplicar dois números\n4 - Sair ");
+        num = int.Parse(Console.ReadLine());
+
+        if (num == 1)
+        {
+            Console.Write("Me informe o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Me informe o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            resultado = num1 + num2;
+
+            Console.WriteLine($"Segue resultado da conta: {resultado}");
+
+        }
+        else if (num == 2)
+        {
+            Console.Write("Me informe o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Me informe o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            resultado = num1 - num2;
+
+            Console.WriteLine($"Segue resultado da conta: {resultado}");
+        }
+        else if (num == 3)
+        {
+            Console.Write("Me informe o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Me informe o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            resultado = num1 / num2;
+        }
+        else if (num == 4)
+        {
+            Console.Write("Muito obrigado!");
+        }
+        else if (num < 1 || num > 4)
+        {
+            throw new ArgumentException();
+        }
+        else
+        {
+            throw new FormatException();
+        }
+
+    }
+    catch (ArgumentException)
+    {
+        Console.WriteLine("Erro: Esse número não está no menu!");
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Erro: A informação passada não corresponde a um número inteiro!");
+    }
+} while (num < 1 || num > 4);*/
+//--------------------------------------------------------------------------------------------------------------------------
+/*
+7.Fatorial com Validação
+Solicite ao usuário um número inteiro positivo e calcule o fatorial desse número usando um loop for.
+Erros a serem tratados:
+Usuário digitar um valor não numérico. (FormatException)
+Usuário inserir um número muito grande. (OverflowException)
+Exemplo de Entrada:
+Digite um número: -3
+
+​
+Exemplo de Saída:
+Erro: O número deve ser positivo.
+*/
+ 
+
 
 
