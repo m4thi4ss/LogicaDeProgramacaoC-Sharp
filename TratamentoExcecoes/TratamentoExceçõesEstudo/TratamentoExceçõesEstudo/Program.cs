@@ -294,6 +294,7 @@ catch (FormatException) //Catch - Seria um complemento do try, onde ele vai usar
     Console.WriteLine("Erro: A informação passada não é um número inteiro!!!"); // Console.WriteLine - Aqui vai mandar uma mensagem para o usuario no console. Nesse caso ele vai informar que só pode numero inteiro.
 }
 } while (numero < 0); //While - Ele vai ajudar com a sua regra que fica no parametro dele o DO, pra identificar se continua a executar o codigo ou para, dentro do parametro tem uma regra, se o codigo executar e essa regra der verdadeira com o resultado de toda a execução do codigo ele vai continuar rodando, se der falasa ele para de rodar o codigo;
+
 int numero1 = 0;
 int resultado1 = 0;
 
@@ -507,7 +508,8 @@ do //O DO seria um laço de repetição, onde ele executa pelo menos uma vez, ca
     try //TRY - Seria um tratamento de exceção, onde ele vai rodar o bloco de codigo abaixo, se ele ve que tem um erro que esta na regra do parametro do catch ele vai para o bloco de codigo na hora e vai rodar o bloco de codigo do catch que tem aquela regra no parametro dele. 
     {
         Console.WriteLine($"Menu de Opções: \n1 - Somar dois números\n2 - Subtratir dois númeors\n3 - Mutiplicar dois números\n4 - Sair");  //Console.WriteLine - Ele manda uma mensagem para o console, nesse caso ele pula uma    linha por conta do line.
-                                //Aqui ele esta sendo usado para informar um menu para o usuario ve no console.
+                                                                                                                                            //Aqui ele esta sendo usado para informar um menu para o usuario ve no console.
+        Console.Write("Me informe a alternativa desejada:");
         num = int.Parse(Console.ReadLine()); //num - Seria a variavel que foi criada antes do DO;
                                              //int.Parse - Aqui ele esta sendo usado para informar que será usado um int e não uma string;
                                              //Console.ReadLine() - Aqui ele vai ser usado para ler a informação que vai ser atribuida para a variavel e vai transformar de string para int.
@@ -618,8 +620,7 @@ do //O DO seria um laço de repetição, onde ele executa pelo menos uma vez, ca
     {
         Console.WriteLine("Erro: Esse número não existe no menu!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console, como vai ser Line ele vai pular linha; Nesse caso vai informar que não pode colocar letras para o usuario;
     }
-} while (num > 4 || num < 1); //while - Aqui ele esta auxiliando o DO, criando um parametro onde se o num for maior que 4 ou mnor que 1 ele vai rodar o codigo novamente.
-
+} while (num > 4 || num < 1); //while - Aqui ele esta auxiliando o DO, criando um parametro onde se o num for maior que 4 ou mnor que 1 ele vai rodar o codigo novamente
 //Solução no bloco de notas
 
 using System;
@@ -633,7 +634,9 @@ do
 {
     try
     {
-        Console.WriteLine("Menu \n1 - Somar dois números\n2 - Subtratir dois números\n3 - Multiplicar dois números\n4 - Sair ");
+        Console.WriteLine($"Menu \n1 - Somar dois números\n2 - Subtratir dois números\n3 - Multiplicar dois números\n4 - Sair ");
+
+        Console.Write("Me informe a alternativa desejada: ");
         num = int.Parse(Console.ReadLine());
 
         if (num == 1)
@@ -707,8 +710,168 @@ Digite um número: -3
 ​
 Exemplo de Saída:
 Erro: O número deve ser positivo.
-*/
- 
 
+
+using System.Numerics;
+
+int num = 0; //int - Seria o tipo de dado;
+             //num - Seria o nome da Variavel;
+             //= - Operador lógico de igualdade;
+             //0 = Seria o valor inicial daquela variavel;
+             //Esta sendo feito uma variavel com o tipo de dado int, ele se chama num e esta com o valor inicial "0".
+
+
+do //do - Seria um laço de repetição, onde ele primeiro roda o bloco de codigo abaixo e depois ele considera o valor que o bloco de codigo retornou. Por exemplo: o num vai vim com o valor "0", só que em do ele vai rodar o bloco de codigo e vai esquecer que o 0 existe subistuindo pelo o novo valor que o bloco de codigo retornar
+{
+    try //try - Ele seria um tratamento de exceção, ele roda o bloco de codigo que esta dentro dele, e verifica se alguma informação esta dentro do parametro do catch, se estiver ele vai para o bloco de codigo abaixo e vai rodar o bloco de codigo do catch que tem o parametro da informação.
+    {
+        Console.Write("Me informe um número: "); //Console.Write - Ele seria uma mensagem que é enviada no console para o usuario. Nesse caso ele vai solicitar um número para o úsuario.
+        num = int.Parse(Console.ReadLine()); //num - Seria o nome da variavel que vai ser usada para guardar a informação;
+                                             //int.Parse - Aqui ele avisa que não vai ser uma string e sim um int;
+                                             //Console.ReadLine - Aqui ele vai ler a informaçãoq ue vai ser passada e vai transformar de string para int;
+                                             //Nesse caso foi criado um console.Write onde ele vai solicitar para o usuario um número, esse número vai ser guardado na variavel num, que tem o tipo de dado proprio para o número que seria int, e como vai ter esse tipo de dado, o int.Parse vai informar que vai ser um int e não uma string e o ReadLine ele vai ler a informação que for passada e vai transformar de string para int.
+
+        if (num < 0) //if - Ele seria uma condicional onde ele vai ser basicamente traduzido o "SE", o parametro dele vai ser SE for essa informação dentro do meu parametro vou parar o bloco de codigo e vou rodar o meu bloco de codigo;
+                     //() - O que esta aqui dentro seria a regra do parametro; num - Seria a variavel que guardou o número do usuario;
+                     //< - Seria o operador "menor";
+                     //0 - Se for menor que ele;
+                     //Nesse caso o IF esta sendo usado para informar SE num for menor que 0 ele vai rodar o bloco de codigo abaixo;
+        {
+            throw new FormatException();//throw - Ele seria um catch basicamente manual; new - Esta informando que vai ser criado um nova exceção; FormatException - Aqui vai ser o tipo de exceção, que tem diversas; Nesse caso esta sendo criado um throw pra criar manualmente uma exceção pra ser usada no catch, e o new informa isso que esta sendo criado manualmente uma nova esceção que vai ter o tipo de exceção FormatException;
+        }
+        else if (num >= 100) //else if - Ele seria a mesma que o if, só que como ja existe um if, por questão de nomenclatura é melhor criar um else if; () - O que está aqui dentro é a regra do parametro; num - Seria a variavel; >= - Aqui ele informa se for maior ou igual; 100 - Seria o valor que vai ser comparado pelo operador de comparação; Nesse caso o Else if ele vai ter uma regra de parametro que seria basicamente SE num for maior ou igual a 100 ele vai rodar o bloco de codigo abaixo;
+        {
+            throw new OverflowException(); //throw - Ele cria um tratamento de exceção manualmente; new - Ele informa que vai ser criado um novo tratamento de exceção; OverflowException() - Aqui seria o tipo de exceção que vai ter. Nesse caso é que se o num for maior ou igual a sem ele vai rodar o bloco de codigo catch que esta com esse novo tratamento de exceção.
+        }
+
+        BigInteger resultado = 1; // BigInterger - Seria um tipo de dado, sendo um Grande número inteiro que vai ser guardado; resultado - Nome da variavel;
+                                  // 1 - Seria o valor inicial da variavel;
+                                  // Nesse caso esta sendo criado uma variavel com um tipo de dado que vai suportar um grande número inteiro e que se chama resultado e vai começar com 1, por que a lista do número fatorial tem que começar ja pelo 1;
+
+        for (int i = 1; i <= num; i++) //for - Ele seria um laço de reptição, onde ele vai ficar rodando o parametro acrescenta +1(i++), até chegar no número final da lista sendo "num";
+                                       //int - Seria o tipo de dado;
+                                       //i - Seria o inicio e fim da lista;
+                                       //num - Seria a varivel que vai guardar a informação do usuario;
+                                       //i++ - Ele vai acrescentar +1 até chegar no número final da lista sendo do 1 até o numero informado pelo usuario;
+                                       //Nesse caso foi feito um for pra criar um laço de repetição que tem o tipo de dado int, vai começar no número 1 e vai finalizar no número que for informado pelo usuario, e ele vai usar o incremento de +1 que seria o i++;
+        {
+            resultado = resultado * i; //resultado - Seria a variavel que foi cirada para guardar o fatorial; = - Seria o operador de resultado; resultado * i - Aqui vai ser feito o calculo do fatoria; Nesse for que acontece a magia, ele criou um laço onde tem o tipo de dado int e vai começar no 1, se o usuario informar 5 ele vai fazer a conta da seguinte forma ((resultado)1 * 1(i) = 1; 1 * 2 = 2; 2 * 3 = 6...), o que aconteceu como a lista "i" começa pelo 1 e o resultado também, eles vão fazer o laço correto para mostrar a lista completa do fatorial.
+            Console.WriteLine($"Passo {i}!: {resultado}"); //Console.WriteLine - Aqui ele esta informando que vai ser enviado uma mensagem para o usuario. Nesse caso ele vai informar que a lista 1 até o num que seria o "i" e o resultado que seria o valor que vai guardar do calculo do fatorial.
+        }
+
+        Console.WriteLine($"\nO fatorial de {num} é: {resultado}"); //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario; Nesse caso ele vai informar o numero que o usuario informou e vai falar com o resultado qual seria o fatorial dele;
+
+    }
+    catch(FormatException) //catch - Aqui ele pega o throw new que foi feito manualmente usa como parametro e quando o codigo bater naquele if ele vai rodar o bloco de codigo abaixo. () - Seria a regra de parametro; FormatExcepetion - É o tipo de exceção que vai ser usado; Nesse caso ele vai usar o tipo de exceção que foi criado no if que foi inserido manualmente esse tratamento de exceção;
+    {
+        Console.WriteLine("Erro: Tem que ser um número inteiro"); //Console.WriteLine - Aqui ele vai mandar uma mensagem no conaole para o usuario; Nesse caso ele vai informar qual erro ele cometeu pra cair nesse try catch;
+    }
+    catch (OverflowException) //catch - O try vai jogar nele caso apareça um erro que esteja dentro do parametro desse catch; () - Seria onde fica o parametro; OverflowException - Seria o tipo de exceção que foi dado no throw la no else if; Nesse caso ele vai pegar o throw que foi colocado manualmente no else if e se o codigo cair naquele else if ele vai rodar o bloco de codigo abaixo.
+    { Console.WriteLine("Erro: O número não pode ser maior que 100"); } //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario na tela do console; Nesse caso ele vai informar o erro que o usuario cometeu pra cair nessa try catch;
+}while(num < 0 ||  num >= 100); //While - Ele consegue trabalhar sozinho, mas o do não consegue trabalhar sem ele. Seria basicamente o parametro do do, assim que o bloco de codigo rodar e aparecer uma informação que esta dentro do while ele para o codigo e começa tudo de novo. O while conseguie trabalhar sozinho ele faz a mesma coisa que o do, só que ele considera a informação que ja estiver na variavel, por exemplo? se a varivel comessace com 0 ele ja ia para o codigo e ia perguntar novamente infinitamente;
+
+using System.Numerics;
+
+int num = 0;
+
+do
+{
+    try
+    {
+        Console.Write("Me informe um número: ");
+        num = int.Parse(Console.ReadLine());
+
+        if (num < 0)
+        {
+            throw new FormatException();
+        }
+        else if (num > 100)
+        {
+            throw new OverflowException();
+        }
+
+        BigInteger resultado = 1;
+
+        for (int i = 1; i <= num; i++)
+        {
+            resultado = resultado * i;
+
+            Console.WriteLine($"Passo {i}! : {resultado}");
+        }
+        Console.WriteLine("O fatorial de {num} é {resultado}");
+
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Tem que ser um número inteiro!!!");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("Tem que ser um número menor que 100!!!");
+    }
+} while (num < 0 || num > 100); */
+//-------------------------------------------------------------------------------------------------------------------------
+/*8. Contagem Regressiva Segura
+Solicite ao usuário um número inteiro positivo e faça uma contagem regressiva até 0.
+Erros a serem tratados:
+Usuário digitar um valor não numérico. (FormatException)
+Usuário inserir um número muito grande. (OverflowException)
+Exemplo de Entrada:
+Digite um número: abc
+
+​
+Exemplo de Saída:
+Erro: Entrada inválida, digite um número válido.
+
+1- Primeiro solicitar para o usuario um número inteiro;
+2- Fazer uma contagem regressiva desse número;
+3- Se o usuario informar número negativos ou letras vai usar o tratamento de exceção FormatEception;
+4- Se o usuario digitar um número muito grande, vai usar o tratamenteo de exceção OverflowException;
+5- Vai usar um laço de reptição do;
+*/
+
+int num = 0;//int - Seria um tipo de dado;
+            //num - Seria o nome da variavel;
+            //= - Seria o operador de resultado;
+            //0 - Seria o valor inicial que o num iria receber;
+            //Nesse esta sendo criado um variavel chamada num que tem o tipo de dado int, e qua vai ter o valor inicial = 1;
+
+do //Do - Ele seria um laço de repetição, primeiro ele roda o bloco de codigo abaixo, se estiver tudo certo ele entrega o resultado, mais se tiver algum erro que esta dentro do parametro do while ele para o bloco de codigo e começa tudo de novo;
+{
+    try //try - Ele seria o tratamento de exceção onde ele vai rodar o bloco de codigo abaixo, se tiver algum erro com o parametro de algum catch ele para o bloco de codigo e roda o catch que esta com aquele parametro;
+    {
+        Console.WriteLine("Me informe um número inteiro: "); // Console.WriteLine - Ele manda uma mensagem para o usuario no console; Nesse caso ele vai solicitar um número inteiro;
+        num = int.Parse(Console.ReadLine()); //num - Seria a variavel criada antes do DO, pra não perder o valor informado pelo usuari e que vai ser guardado pelo num;
+                                             //int.Parse - Ele informa que vai ser um int e não uma string; Console.ReadLine() - Ele vai fazer a leitura da informação e vai transformar de string para int;
+                                             //Nesse caso ele esta informando que num vai guardar a informação que for passada pello usuario, e informou com int.Parse que vai ser um tipo de dado int e não string e console.ReadLine vai ler a informação passada e vai transformar de string para int.
+        
+        if(num < 0) //if - Seria uma condicional, ele usa a regra dentro do parametro dele e se a inforação passada antes dele for a que esta dentro do parametro ele vai rodar o bloco de codigo abaixo;
+                    //() - Aqui seria o parametro e o que esta dentro seria a regra;
+                    //num < 0 - Se a variavel num for menor que 0;
+                    //Nesse caso ele esta informando que SE a informação que foi passada pelo usuario e guardada na na variavel num for menor que zero vai para o bloco de codigo e vai rodar o bloco de codigo dele.
+        {
+            throw new FormatException(); //throw - Ele vai criar um tratamento de exceção manualmente; new - Aqui ele esta informando que vai criar um novo tratamento de exceção; FormatException - Aqui seria o tipo do tratamento de exceção; Nesse caso esta sendo criado um tratamento de exceção manualmente e informando que vai ser um objeto onde vai ter o tipo de dado FormatException(), podendo ser usado mais tarde pelo catch;
+        }
+        else if(num > 100) //Else if - Ele seria a mesma coisa do if, mas como tem ja um if, por questão de nomenclatura ele se chama else if.
+                           //Nesse caso o else if tem um parametro onde ele informa que SE num for maior que sem ele vai rodar o seu bloco de codigo.
+        {
+            throw new OverflowException(); //throw - Ele vai criar um tratamento de exceção manualmente; new - Esta informando que vai ser criado um novo tratamento de exceção; OverflowException - Aqui seria o tipo de tratamento de exceção;
+        }
+
+            for (int i = num; i > 0; i--) // for - Seria um laço de repetição onde ele vai rodar o bloco de codigo até o fim da sua lista; () - Parametro do for; int - Seria o tipo de dado que for vai ter de parametro; i - Seria o inicio e fim da repetição dele; i-- - Seria o incremento, sendo -1 até chegar no resultado final; Nesse caso foi criado um for que vai ter inicio com o valor da variavel num, e vai terminar no 0, e pra chegar no 0, utilizei o incremento de i-- que seria -1. até chegar no resultado esperado;
+            {
+                Console.WriteLine(i); //Console.WriteLine - Aqui ele vai mostrar uma mensagem na tela do usuario. Nesse caso ele vai mostrar todos os números que vai aparecer no laço de repetição pra mostrar basicamente uma contagem regressiva;
+            }
+    }
+    catch(FormatException) //catch - Seria um complemento do try, onde o try vai rodar o bloco de codigo e se um erro estiver igual a regra do parametro desse catch ele vai para o bloco de codigo e vai rodar o bloco de codigo desse catch; () - Seria o parametro; FormatException - Seria o tipo de exceção que vai utilizado nesse catch; Nesse caso se o usuario informar uma letra ou número negativo para guardar na variavel num o try vai parar o codigo e vai rodar o bloco de codigo abaixo.
+    {
+        Console.WriteLine("Somente número inteiro!!!"); //Console.WriteLine - Aqui ele vai mostrar uma mensagem para o usuario no console; Nesse caso se for letra e número negativo ele vai informar que não pode;
+    }
+    catch(OverflowException) //catch - Ele seria um complemento do try, se algum erro estiver seguindo a rgra que esta dentro do parametro desse catch o try vai parar o bloco de codigo e vai rodar o bloco de codigo abaixo; () - Parametro e o que esta dentro seria a regra; OverflowException - Seria o tipo de exceção que vai ser usado por esse catch; Nesse caso se o cliente informar um número maior que 100 vai parar o codigo e vai rodar o bloco de codigo abaixo;
+    {
+        Console.WriteLine("Esse número é muito grande!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso se o número for muito grande ele vai mandar uma mensagem de aviso;
+    }
+}while(num < 0 || num > 100); //While - Seria o complemento do DO, mas o DO não vive sem ele, mas o while vive sem o DO. O while sozinho ele roda o codigo ja com as informações que ja tem, ja o DO ele primeiro roda o bloco de codigo e as iformações que ja tinha vai ser atualizada pelas nova, ele é usada mais pra ter uma parametro de quando vai ser preciso parar o codigo e rodar novamente. Nesse caso se o num for menor 0 ele para o codigo e se for maior que 100 ele também para o codigo.
+//-------------------------------------------------------------------------------------------------------------------------
 
 
