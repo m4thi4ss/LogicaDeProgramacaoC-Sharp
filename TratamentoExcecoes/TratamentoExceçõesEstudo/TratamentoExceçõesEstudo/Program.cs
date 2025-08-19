@@ -828,7 +828,7 @@ Erro: Entrada inválida, digite um número válido.
 3- Se o usuario informar número negativos ou letras vai usar o tratamento de exceção FormatEception;
 4- Se o usuario digitar um número muito grande, vai usar o tratamenteo de exceção OverflowException;
 5- Vai usar um laço de reptição do;
-*/
+
 
 int num = 0;//int - Seria um tipo de dado;
             //num - Seria o nome da variavel;
@@ -872,6 +872,180 @@ do //Do - Ele seria um laço de repetição, primeiro ele roda o bloco de codigo
         Console.WriteLine("Esse número é muito grande!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso se o número for muito grande ele vai mandar uma mensagem de aviso;
     }
 }while(num < 0 || num > 100); //While - Seria o complemento do DO, mas o DO não vive sem ele, mas o while vive sem o DO. O while sozinho ele roda o codigo ja com as informações que ja tem, ja o DO ele primeiro roda o bloco de codigo e as iformações que ja tinha vai ser atualizada pelas nova, ele é usada mais pra ter uma parametro de quando vai ser preciso parar o codigo e rodar novamente. Nesse caso se o num for menor 0 ele para o codigo e se for maior que 100 ele também para o codigo.
+int num = 0;
+
+do
+{
+    try
+    {
+        Console.Write("Me informe um número: ");
+        num = int.Parse(Console.ReadLine());
+
+        if (num < 0)
+        {
+            throw new FormatException();
+        }
+        else if (num > 100)
+        {
+            throw new OverflowException();
+        }
+
+        for (int i = num; i >= 0; --i)
+        {
+            Console.WriteLine(i);
+        }
+
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Somente números inteiros!!!");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("Esse número é muito grande!!!");
+    }
+} while (num < 0 || num > 100);*/
 //-------------------------------------------------------------------------------------------------------------------------
+using System.ComponentModel;
+using System.ComponentModel.Design;
+
+/*9.Menu de Opções com Tratamento de Erros
+Crie um programa que exiba um menu com opções:
+1 - Somar dois números
+2 - Subtrair dois números
+3 - Multiplicar dois números
+4 - Sair
+
+​
+O usuário deve escolher uma opção válida e inserir os números conforme necessário.
+Erros a serem tratados:
+Usuário digitar um valor não numérico. (FormatException)
+Usuário escolher uma opção inválida. (ArgumentException)
+Exemplo de Entrada:
+Digite a opção: 5
+
+​
+Exemplo de Saída:
+Erro: Opção inválida. Escolha um número entre 1 e 4.
+
+Como fazer:
+
+1 - Criar a variavel menu pra fora do DO;
+2 - Criar o do;
+3 - Criar o try;
+4 - Criar a mensagem informando o menu;
+5 - Guardar a informaçao na variavel menu;
+6 - Criar os if com os throw;
+7 - Fazer o catch;
+8 - finalizar o while;
+ */
+
+int menu = 0; //int - Seria o tipo de dado da variavel;
+              //menu - Seria o nome da variavel;
+              //= - seria o operador de resultado;
+              //0 - Seria o valor inicial da variavel;
+              //Sendo assim foi criado uma variavel com o tipo de dado int, chamada menu pra guardar a informação que o usuario vai escolher no menu.
+int num = 0; //int - Seria o tipo de dado da variavel;
+             //num - Seria o nome da variavel; = Operador de resultado;
+             //0 = Valor inicial da variavel;
+             //Sendo assim foi criado uma variavel chamada num que tem o tipo de dado int, onde vai guaradar o primeiro número para o calculo que o usuario vai fazer;
+int num1 = 0; // int - Seria o tipo de dado;
+              // num1 - Seria o nome da variavel;
+              // = - Operador de resultado;
+              // 0 = Seria o valor inicial da variavel;
+              // Sendo assim foi criado um num1 que tem o tipo de dado int e vai guardar o segundo número para o calculo do usuario;
+int resultado = 0; //int - Seria o tipo de dado da variavel;
+                   //resultado - Seria o nome da variavel;
+                   //= - Operador de resultado;
+                   //0 - Seria o valor inicial;
+                   //Sendo assim foi criado uma variavel chamada resultado que tem o tipo de dado int, onde ela vai ser usada para guardar o resultado do calculo que o usuario escolheu, usando o num e o num1 pra ter o resultado.
+
+do //do - Seria um laço de repetição que roda o bloco de codigo pelo menos uma vez, e desconsidera o valor da variavel e só considerar o valor que teve na primeira rodada do codigo, tendo o while como parametro pra parar o bloco de codigo e rodar novamente.
+{
+    try //try - Seria um tratamento de ecxeção onde ele vai fazer a leitura do bloco de codigo, caso tem algum erro que siga os parametros do catch ele para o bloco de codigo e começa a rodar o bloco de codigo do catch;
+    {
+        Console.WriteLine("Menu\n1 - Somar dois números\n2 - Subtrair dois números\n3 - Multiplicar dois números\n4 - Sair\n ");//Console.WriteLine - Ele seria uma mensagem que é enviada para o usuario no console, nesse caso ele vai mostrar o menu para o usuario escolher qual opção é melhor pra ele;
+        menu = int.Parse(Console.ReadLine()); // menu - Seria a variavel que foi criada fora do DO; int.Parse - Ele informa que vai ser um int e não uma string; Console.ReadLine() - Aqui ele vai ler a informação e vai transformar de string para int; Nesse caso ele vai guardar a informação que ele vai escolher no menu;
+
+
+
+        if (menu <= 0 || num < 0) //if - Ele seria uma condicional, sendo usado para o SE informação passada estiver dentro do meu   parametro, vai rodar o meu bloco de codigo;
+                       //() - Seria o parametro e o que esta dentro seria a regra;
+                       //num <= 0 - Se a variavel num receber o valor de 0, essa é a regra do bloco de codigo;
+                       //Nesse caso o if esta informando se o usuario colocar uma informa que seja igual ou menor que 0 ele vai parar o codigo e vai rodar o seu bloco de codigo;
+        {
+            throw new FormatException(); //throw - Seria um tratamento de exceção manual, onde ele vai colocar um catch manualmente; new - Esta informando que vai ser um novo tratamento de exceção o que o if vai roda; FormatException - Vai ser o tipo de exceção que vai colocar no tratamento; Nesse caso esta informando que vai ser criado um novo tratamento de exceção manualmente que vai ter o tipo de exceção FormatException;
+        }
+        else if (menu > 4) //else if - Ele seria a mesma coisa que o if, mas como ja tem um if no bloco de codigo por questão de nomenclatura precisa ser um else if;
+                           //() - Seria o parametro do else if;
+                           //menu > 4 - Esta informando SE menu é maior que 4;
+                           //Nesse caso está sendo criado um else if pra informar que se o usuario guardar um número que seja maior que 4 ele vai parar o bloco de codigo e vai rodar o bloco de codigo desse else if;
+        {
+            throw new ArgumentException(); //throw - Aqui ele cria um tratamento de exceção manualmente;
+                                           //new - Informa que esta sendo criado um tratamento de ecxeção; ArgumentException - Seria o tipo de tratamento de exceção;
+                                           //Nesse caso esta sendo criado uma tratamento de exceção manual, onde ele vai ter o tipo de exceção ArgumentException;
+        }
+        else if (menu == 1) //else if - Ele é usado quando ja tem um if, sendo a mesma coisa que o if, mas como é continuação de um if por questão de nomenclatura é um else if;
+                            //() - Seria o parametro e dentro seria a regra;
+                            //menu == 1 - informa que se a informação guardada na variavel for igual a 1;
+                            //Nesse caso o else if tem o parametro que informa que SE menu for igual 1 ele vai rodar o bloco de codigo abaixo;
+        {
+            Console.WriteLine("Me informe um número: "); //Console.WriteLine - Aqui ele vai passar uma mensagem para o usuario no console; Ele esta solicitando o primeiro numero do calculo para o usuario;
+            num = int.Parse(Console.ReadLine()); //num - Seria a variavel que foi criada fora do DO;
+                                                 //int.Parse - Aqui ele vai informar que vai ser um int e não uma string;
+                                                 //Console.ReadLine - Aqui ele vai ler a informação e vai transformar de string para int;
+                                                 //Nesse caso vai mandar uma mensagem para o usuario solicitando o primeiro número do calculo e esse número vai ser guardado na varivel num que tem o tipo de dado int, e como ele tem esse tipo de dado, usamos o int.Parse para avisar e o ReadLine vai ler e transformar de int para string;
+
+            Console.WriteLine("Me informe o segundo número: "); //Console.WriteLine - Aqui ele vai mandar uma mensagem no console. Nesse caso ele vai solicitar o segundo número;
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria a variavel que foi criada la fora do DO;
+                                                  //int.Parse - Aqui esta informando que vai int e não string; Console.ReadLine - Aqui ele vai ler a informação e vai transformar de int para string;
+                                                  //Nesse caso assim que ele informar o segundo número para o calculo esse segundo número vai ser guardado na variavel num1 onde ele vai usar o int.Parse pra informar que vai ser um int e não uma string e o Console.ReadLine para ler a informação e transformar de string para int; 
+
+            resultado = num + num1; //resultado - Seria a variavel que foi criada fora do DO; num + num1 - Seria o calculo pra ter o valor da variavel resultado;
+                                    //Nesse caso foi criado esse calculo pra fazer quando o usuario passar todas informações;
+
+            Console.WriteLine($"O resultado é {resultado}");//Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso vai mandar o resultado do calculo das informações que foi passada pelo usuario;
+        }
+        else if (menu == 2) //else if - Seria a mesma coisa que o if, mas como é continuidade de um if existente, por questão de nomenclatura vira um else if;
+                            //menu == 2 - SE a informação guardada no menu for igual a 2 sendo a regra do else if;
+                            //Nesse caso o else if esta informando SE a informação guardada pelo menu for igual a 2 ele vai parar o bloco de codigo e vai rodar o bloco de codigo desse else if;
+        {
+            Console.WriteLine("Me informe o primeiro número: ");//Console.WriteLine - Ele manda uma mensagem no console para o usuario; Nesse caso ele vai solicitar o primeiro número;
+            num = int.Parse(Console.ReadLine());//num - Seria o nome da variavel; int.Parse - Aqui ele avisa que vai ser um int e não uma string; Console.ReadLine - Aqui ele vai ler a informação que for passada e vai transformar de string para int; Nesse caso foi informado que o num que tem o tipo de dado int vai ser a variavel que vai guardar o primeiro número que for passado pelo usuario;
+
+            Console.WriteLine("Me informe o segundo número: "); //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario; Nesse caso ele vai solicitar o segundo número para o usuario;
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria o nome da variavel; int.Parse - Aqui ele vai avisar que vai ser int e não uma string; Console.ReadLine - Aqui ele vai ler a informação e vai transformar de string para int; Nesse caso esta informando que vai ser usado a variavel num1 com o tipo de dado int para guardar a informação do segundo número passada pelo usuario;
+
+            resultado = num - num1; //resultado - Seria a variavel que foi criado fora do DO; num - num1 - É do calculo dessas duas variavel que o resultado vai apurar o valor;
+
+            Console.WriteLine($"O resultado é {resultado}"); //Console.WriteLine - Seria uma mensagem que vai ser enviada para o usuario no console; Nesse caso ele vai informar o valor da variavel resultado, informado o resultado do calculo;
+        }
+        else if (menu == 3)//else if - Seria a mesma coisa que o if, mas como ja tem um if nessa extenção por questão de nomenclatura ele vira um else if; () - Seria o parametro e dentro seria a regra; menu == 3 - Seria a regra que está dentro do parametro; Nesse caso o else if esta informando que SE a variavel MENU for == igual a 3 ele vai para o bloco de codigo e vai rodar o seu bloco de codigo;
+        {
+            Console.WriteLine("Me informe o primeiro número: "); //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario no console; Nesse caso ele vai solicitar o primeiro número do calculo;
+            num = int.Parse(Console.ReadLine()); //num - Seria o nome da variavel; int.Parse - Seria onde vai ser avisado que vai ser int e não string; Console.ReadLine - Aqui ele vai ler a informação que for passada e vai transformar de string para int; Nesse caso ele vai informar que a informação que for passada pelo usuario vai ser guardada no num que tem o tipo de dado int, e como vai ter esse tipo de dado ele vai avisar com int.Parse e o console.ReadLine vai ler a informação e vai transformar de string para int;
+
+            Console.WriteLine("Me informe o segundo número: "); //Console.WriteLine - Seria uma mensagem que vai ser enviada para o usuario no console; Nesse caso ele vai solicitar o segundo número;
+            num1 = int.Parse(Console.ReadLine()); //num1 - Seria a variavel que vai guardar a informação; int.Parse - Aqui ele vai avisar que vai ser um int e não uma string; Console.ReadLine - Aqui ele vai ler a informação e vai transformar de string para int;
+
+            resultado = num / num1; //resultado - Seria o nome da variavel; num / num1 - Esse seria o calculo que vai dar o valor para a variavel resultado; Nesse caso a variavel resultado vai guardar o valor da divisão da variavel num e num1;
+
+            Console.WriteLine($"Resultado é {resultado}"); //Console.WriteLine - Aqui ele vai mandar uma mensagem para o usuario no console; Nesse caso ele vai mandar uma mensagem para usuario informando o resultado do calculo informado;
+        }
+        else if (menu == 4) //else if - Seria a mesma coisa que o if, mas como ja tem if na extensão por questão de nomenclatura ele vai se chamar else if; () - Seria o parametro e dentro a regra; menu == 4 - SE o menu for == igual a 4; Nesse caso o else if esta informando que se o menu for igual a 4 ele vai para o bloco de codigo e vai rodar o bloco de codigo desse else if;
+        {
+            Console.WriteLine("Obrigado!!! Volte sempre.");//Console.WriteLine - Aqui seria uma mensagem que vai ser enviada para o usuario no console; Nesse caso ele vai informar que foi finalizado a consulta e vai agradecer e pedir pra voltar;
+        }
+    }
+    catch (FormatException) //catch - Seria o parametro do try, o try faz a leitura, se o erro estiver dentro do parametro do catch ele para o bloco de codigo e roda o bloco de codigo desse catch;
+    {
+        Console.WriteLine("Somente número do menu!!!");//Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso ele vai informar que só pode informar números que tem no menu; 
+    }
+    catch (ArgumentException) //catch - Seria o parametro do try, o try vai fazer a leitura do bloco de codigo, e se alguma informação estiver dentro do parametro do catch ele para o bloco de codigo e roda o bloco de codigo do catch;
+    {
+        Console.WriteLine("Somente números do menu!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso ele vai informar que só pode números que estão no menu;
+    }
+} while (menu < 0 || menu != 4);//while - Ele seria um parametro para o DO, só que o while consegui trabalhar sozinho, a diferença que o while com DO ele começa a executar o codigo depois de primeiro laço de repetição então ele executa o codigo de comenado pelo menos uma vez; () - Parametro do While; menu < 0 || menu != 4 - Aqui esta informando menu menor < que - ou menu diferente != de 4; Nesse caso o parametro do while vai ser usado pra caso coloque números negativos ou letrar ou números que é diferente do 4;
+
 
 
