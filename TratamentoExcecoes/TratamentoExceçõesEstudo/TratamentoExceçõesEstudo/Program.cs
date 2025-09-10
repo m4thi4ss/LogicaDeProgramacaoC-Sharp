@@ -908,37 +908,26 @@ do
 //-------------------------------------------------------------------------------------------------------------------------
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Net;
+/*### **9. Menu de Opções com Tratamento de Erros**
 
-/*9.Menu de Opções com Tratamento de Erros
 Crie um programa que exiba um menu com opções:
+
+```
 1 - Somar dois números
 2 - Subtrair dois números
 3 - Multiplicar dois números
 4 - Sair
 
-​
+```
+
 O usuário deve escolher uma opção válida e inserir os números conforme necessário.
-Erros a serem tratados:
-Usuário digitar um valor não numérico. (FormatException)
-Usuário escolher uma opção inválida. (ArgumentException)
-Exemplo de Entrada:
-Digite a opção: 5
 
-​
-Exemplo de Saída:
-Erro: Opção inválida. Escolha um número entre 1 e 4.
+**Erros a serem tratados:**
 
-Como fazer:
+- Usuário digitar um valor não numérico. (`FormatException`)
+- Usuário escolher uma opção inválida. (`ArgumentException`)
 
-1 - Criar a variavel menu pra fora do DO;
-2 - Criar o do;
-3 - Criar o try;
-4 - Criar a mensagem informando o menu;
-5 - Guardar a informaçao na variavel menu;
-6 - Criar os if com os throw;
-7 - Fazer o catch;
-8 - finalizar o while;
- */
 
 int menu = 0; //int - Seria o tipo de dado da variavel;
               //menu - Seria o nome da variavel;
@@ -1046,6 +1035,73 @@ do //do - Seria um laço de repetição que roda o bloco de codigo pelo menos um
         Console.WriteLine("Somente números do menu!!!"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console; Nesse caso ele vai informar que só pode números que estão no menu;
     }
 } while (menu < 0 || menu != 4);//while - Ele seria um parametro para o DO, só que o while consegui trabalhar sozinho, a diferença que o while com DO ele começa a executar o codigo depois de primeiro laço de repetição então ele executa o codigo de comenado pelo menos uma vez; () - Parametro do While; menu < 0 || menu != 4 - Aqui esta informando menu menor < que - ou menu diferente != de 4; Nesse caso o parametro do while vai ser usado pra caso coloque números negativos ou letrar ou números que é diferente do 4;
+int num = 0;
+int num1 = 0;
+int menu = 0;
+int resultado = 0;
 
+do
+{
+    try
+    {
+        Console.WriteLine("Menu\n1 - Somar dois números\n2 - Subtrair dois números\n3 - Multiplicar dois números\n4 - Sair");
+        menu = int.Parse(Console.ReadLine());
 
+        if (menu < 1 || menu > 4)
+        {
+            throw new ArgumentException();
+        }
+        else if (menu == 1)
+        {
+            Console.WriteLine("Me informe o primeiro número: ");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Me informe o segundo número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            resultado = num + num1;
+            Console.WriteLine($"O resultado da conta é {resultado}");
+        }
+        else if (menu == 2)
+        {
+            Console.WriteLine("Me informe o primeiro número: ");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Me informe o segundo número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            resultado = num - num1;
+            Console.WriteLine($"O resultado da conta é {resultado}");
+        }
+        else if (menu == 3)
+        {
+            Console.WriteLine("Me informe o primeiro número: ");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Me informe o segundo número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            resultado = num * num1;
+            Console.WriteLine($"O resultado da correta é {resultado}");
+        }
+        else if (menu == 4)
+        {
+            Console.WriteLine("Obrigado! Volte sempre...");
+            break;
+        }
+        else
+        {
+            throw new FormatException();
+        }
+    }
+    catch (ArgumentException)
+    {
+        Console.WriteLine("O número precisa estar 1 a 4!");
+    }
+    catch(FormatException)
+    {
+        Console.WriteLine("O tem que ser um número inteiro, entre 1 a 4!");
+    }
+} while (menu < 1 || menu != 4);*/
+//------------------------------------------------------------------------------------------------------------------------------
+
+/*1. * *Listagem dos Elementos**
+    - Crie um vetor com 5 elementos, e liste todos os elementos do vetor utilizando um For*/
 
