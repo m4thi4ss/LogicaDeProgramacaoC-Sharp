@@ -1,0 +1,14 @@
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\bin\Debug\net8.0\ArraysVetores.exe
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\bin\Debug\net8.0\ArraysVetores.deps.json
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\bin\Debug\net8.0\ArraysVetores.runtimeconfig.json
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\bin\Debug\net8.0\ArraysVetores.dll
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\bin\Debug\net8.0\ArraysVetores.pdb
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.AssemblyInfoInputs.cache
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.AssemblyInfo.cs
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.csproj.CoreCompileInputs.cache
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.dll
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\refint\ArraysVetores.dll
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.pdb
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ArraysVetores.genruntimeconfig.cache
+C:\Users\silva\source\repos\ArraysVetores\ArraysVetores\obj\Debug\net8.0\ref\ArraysVetores.dll

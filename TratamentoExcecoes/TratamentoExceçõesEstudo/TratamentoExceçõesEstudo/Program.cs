@@ -1105,3 +1105,26 @@ do
 /*1. * *Listagem dos Elementos**
     - Crie um vetor com 5 elementos, e liste todos os elementos do vetor utilizando um For*/
 
+
+/*Um caixa eletrônico precisa liberar o menor número possível de cédulas ao sacar um valor*/
+
+int nota = 5;
+int nota1 = 5;
+
+
+//Vamos considerar que pra ser aprovado a média da nota tem que ser 5 e pra ser reprovado menos que 5
+
+int media;
+
+media = (nota + nota1) / 2;
+
+if (media < 5 )
+{
+    Console.WriteLine("Você foi reprovado!");
+}
+else
+{
+    Console.WriteLine("Você foi aprovado!");
+}
+
+
