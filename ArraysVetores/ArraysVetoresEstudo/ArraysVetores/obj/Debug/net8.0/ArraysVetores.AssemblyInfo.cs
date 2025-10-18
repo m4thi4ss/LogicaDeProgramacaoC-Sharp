@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArraysVetores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+071580cb664ed5b9522f8646c0d06f8994c4bada")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42c43a9270d8d371ce4dac1bfa3bc523f0869353")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArraysVetores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArraysVetores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
