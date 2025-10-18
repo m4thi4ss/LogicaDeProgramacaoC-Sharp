@@ -310,12 +310,85 @@ for (int i = 0; i < protecaoArrayMultidimensional.GetLength(0); ++i) //for - O f
 /* EXERCIOCIO ARRAY MULTIDIMENSSIONAL
  * 
 1) cria uma matriz com 3 linhas e 4 colunas (3x4)
-- COLOCAR PASSO A PASSO DE COMO FOI FEITO ESSES PASSOS
+- Informar qual tipo de dado ela vai carregar; 
+- Após ter informado, vou fazer a matriz para dizer que vai ser um array multidimenssional;
+- Vou dar o nome do array multimenssional de exercicio;
+- Após isso foi dar atribuir duas dimenssões pra ela;
+- vou informar que ela tem 3 linhas e 4 colunas {{1234}{1234}{1234}}
+- Após ter criado o array multidimenssional que seria a matriz;
 
 2) preencher a matriz manualmente (exemplo)
-3) pegar informações sobre a matriz
-4) imprimir a matriz como uma tabela
-5) somar cada coluna (exemplo de operação)
+- Aqui optei por um array mais partico pra não ter que colocar manualmente;
+
+3) pegar informações sobre a matriz (As informações seria a quatidade de linhas e colunas tem disponivel, e ela precisa ser guardada então tem que utilizar uma variavel simples pra guardar)
+- Criar a primeira variavel pra linha 
+- Ela vai ter um tipo de dado int 
+- E vai se chamar linha, pois ela é a primeira simenção;
+- Vai atribuir pra ela o exercicio.GetLength(0) para informar o total da contagem de linhas tem disponivel;
+- Criar a segunda varaivel, que seria pra segunda dimenssão que é para colunas;
+- dar o tipo de dado pra ela int;
+- Vai se chamar coluna;
+- Vai atribuir a ela o exercicio.GetLength(1) que seria o valor total da contagem de colunas disponivel;
+- CRIOU AS DUAS VARIAVEIS DE CONTAGEM DE LINHA E COLUNA PRA USAR FUTURAMENTE VAMOS PRO PROXIMO
+
+4) imprimir a matriz como uma tabela (Pra imprimir a tabela da forma correta criaremos um for pra primeira dimesão e segundo for pra segunda dimensão qeu seria linha e coluna)
+- Criar o primeiro for para primeira dimensão que seria a linha
+- Ele vai ter um tipo de dado int 
+- O incio e fim desse for vai se chamar i;
+- O i vai começar no 0;
+- E o i vai finalizar em 1 número menor que a variavel linha;
+- E a repetição do incremento desse for vai ser o ++i, onde ele vai ter um incremento de +1;
+- E dentro do primeiro for, vamos criar o segundo for que seria da primeira dimensão sendo o da coluna;
+- Ele vai ter um tipo de dado int;
+- Vai se chamar j;
+- O inicio do j vai ser no 0;
+- O final do j vai ser 1 a menos que a variavel coluna;
+- E a repetição do incremento nesse for vai ser um ++i que seria a repetição do incremento +1;
+- Após criar o i que é a primeira dimenssão (linha) e o j que é a segunda dimenssão(coluna);
+- Vamos imprimir na tela;
+- Criar um Console.WriteLine;
+- Colorcar a sintaxe de leitura do array multidimenssional(matriz) que seria (exercicio[i, j]);
+- Após finalizado a impressão da forma correta de uma tabela, vamos para o proximo passo;
+
+
+5) somar cada coluna (exemplo de operação) (Para fazer a soma das colunas, precisaremos criar uma tabela por onde vai percorrer por todas as linhas e colunas que pertecem a elas;
+
+- Então vamos começar criando a parte da tabela que seria a coluna que vai ser calculado o valor;
+- Criar o for da segunda dimenssão (coluna);
+- Ele vai ter o tipo de dado int; 
+- Vai continuar se chamando j igual na impressão dos array acima;
+- O inicio do j vai ser no 0;
+- E o j vai finalizar em um número antes da vaiavel coluna;
+- E a repetição do incremento vai ser ++i que seria a repetição do +1;
+
+- Vamos criar a variavel que vai guardar o resultado da soma de cada coluna;
+- Ela vai ter um tipo de dado int;
+- E vai se chamar somaColuna;
+- E vai atribuir um valor incial pra ela 0;
+- Ela tem que ser criada antes do for da primeira dimensão, por que ela não pode se repetir toda vez que passar nas colunas da linha 0;
+
+- Após ter criado a variavel incial da soma, vamos criar o for da primeira dimensão(linha), vamos criar a primeira dimensão da tabela dentro do for da segunda dimensão. POR QUE NÃO TEM COMO VER OS VALORES DOS QUARTOS SEM SUBIR AS ESCADAS;
+- Criar um for para a primeira dimenssão que seria a linha, dentro do for j que seria o que vai ser somado que seria as colunas, ;
+- Ele vai ter um tipo dado int;
+- E vai se chamar i;
+- O i vai inciar no 0;
+- E o i vai finalizar um a menos da variavel linha;
+- Ele vai repetir o incremento de ++i que seria o +1;
+
+- E após a finalização da tabela que precisara ser percorrida, vamos inciar a soma, dentro do for i que é o da primeira dimenssão;
+- Vamos chamar a variavel de incializção da soma;
+- vamos usar o operador lógico de += que vai entrar em cada linha e vai somar todos os valores que tem nas colunas, para fazer a atribuição de valor para a variavel; 
+- E depois do += vamos usar o exercicio[j, i], para percorrer todas colunas dessas tabelas pegando a soma total de cada uma;
+- Então ele vai percorrer da seguinte forma [0, 0] = {1, 2, 3, 4} += vai atribuir o valor 10, então a coluna 0 da linha 0 vai ter o valor guardado pela variavel somaColuna = 10 e assim vai percorrendo pelo restante da tabela criando uma "lista" dos valores totais;
+
+- Após ter criado a variavel soma precisaremos criar a impressão dos valores de cada coluna;
+- Vamos criar o Console.WriteLine;
+- Que vai ter o valor da seguinte formar primeiro vai informar qual coluna vai ter o valor total informador "Coluna {j}"
+- Após isso vamos CONCATENAR com a variavel somaColuna, para informar os valores 
+
+FIM DO PSEUDOCÓDIGO DESSE EXERCICIO
+
+BORA COLOCAR EM PRATICA
 */
 
 //1) cria uma matriz com 3 linhas e 4 colunas (3x4)
@@ -386,4 +459,4 @@ for (int j = 0;j < coluna; ++j) //for - Seria um laço de repetição onde ele t
     }
     
 }
-//--------------------CRIAR PASSO A PASSO ACIMA DE COMO FOI FEITO ESSES EXERCICIOS E CORRIGIR OS FOR QUE ELES SÃO CRIADOS PARA CRIAR UMA TABELA E NÃO PARA PROTEGER A COLUNA E AS LINHAS--------------------------------------------------------------------- PAREI NO 6) Exemplo comentado passo a passo-------
+//--------------------CORRIGIR OS FOR QUE ELES SÃO CRIADOS PARA CRIAR UMA TABELA E NÃO PARA PROTEGER A COLUNA E AS LINHAS--------------------------------------------------------------------- PAREI NO 6) Exemplo comentado passo a passo-------
