@@ -208,9 +208,66 @@ linhasColunas[1,2] = 3; //linhasColunas - Seria o nome do array multidimenssiona
 //Sendo assim no array multidimenssional você viu que tem duas dimenssões uma de dentro e outra de fora isso significa que o matrix.Rank tem 2 dimenssões.
 
 
+
 //ARRAY TRIDIMENSSIONAL QUE TEM 3 .Rank
 
-//int[,,] mtrixTridimenssional = new int[1, 2, 3]; //int - Seria o tipo de dado da matriz; [,,] - O cochete com duas virgulas seria o cubo, aqui ele deixa claro que é um array tridimenssional; matrixTridimenssional - Seria o nome do array; = - Seria informando que vai ser o resultado do array ou o valor guardado; new int - Aqui declara que vai ter um array tridimentssional e os valores vão ser colocados manualmente; [,,] - Como será feito manualmente tem que colocar primeiro linhas, colunas e camadas, sendo 3 dimenssões uma fora que seria linha, outra dentro da linha sendo as colunas e outra dentro das colunas que seria as camadas; Então com o matrix.Rank você vai informar que vai ter 3 dimenssões nesse array.
+/* O array tridimenssional ele serve pra quando você quer colocar mais de uma matriz. Sendo assim a diferença do multidimenssional para o tridimenssional seria que o multidimensional ele tem linha e coluna que fica dentro de uma matriz, ja no tridimenssional ele pode ter quantas matriz ele quiser e dentro de cada matriz tem a linha e a coluna;
+ * 
+ * MONTANDO UM ARRAY TRIDIMENSSIONAL MATRIZ RETANGULAR - FORMA SEGURA
+ */
+
+
+int[,,] arr3D = new int[2, 2, 3] //int - Esta informando que o tipo de dado vai ser int;
+                                 //[,,] - Esta informando que vai ser um array tridimenssional, onde vai ter mais de uma matriz; arr3D - Seria o nome do array tridimenssional;
+                                 //new int - Esta informando que no momento só vai ter a quantidade de matriz, quantidade de linha e quantidade de coluna, e futuramente no código vai ser informado os valores que serão guardados;
+                                 //[2,2,3] - Aqui esta informando que vai ter 2 matriz, 2 linhas e 3 colunas;
+                                 //Sendo assim foi criado um array tridimenssional matriz retangular onde ele vai ter o tipo de dado int e vai se chamar arr3D e vai atribuir somente a quantidade de matriz, linha e coluna (new int), deixando o valor somente para o futuro do código, então vai ter 2 matriz, 2 linhas e 3 colunas;
+{
+    {{1,2,3},{1,2,3}}, //{{}, {}} - Seria as linhas;
+                       //1, 2, 3 1, 2, 3 - Seria a quantidade de colunas junto com os valores que serão guardados;
+                       //Sendo assim foi informado os valores que serão guardados no array tridimenssional;
+
+    {{1,2,3},{1,2,3}} //{{}, {}} - Serua as linhas;
+                      //1, 2, 3 1, 2, 3 - Seria a quantidade de colunas junto com os valores que serão guardados;
+                      //Sendo assim foi informado os valores do array tridimenssional;
+};
+
+for(int i = 0; i < arr3D.GetLength(0); ++i) //for - Seria um laço de repetição onde tem inicio e fim, ele percorre entre esse inicio e fim usando o +1 ou -1 que seria ++i ou --i;
+                                            //int - Seria o tipo de dado do for;
+                                            //i - Seria o nome do for;
+                                            //i = 0 - Seria o valor de inicio;
+                                            //< - Operador lógico menor;
+                                            //arr3D - Esta chamando o array com esse nome;
+                                            //GetLenght(0) - Seria a função que vai trazer o total de matriz que tem no array;
+                                            //++i - Significa que percorreu pelo inicio e fim com o +1;
+                                            //Sendo assim foi criado um for para informar a primeira dimensão do array tridimenssional que seria a matriz esse for vai se chamar i e vai ter o tipo de dado int, ele vai ter inicio no 0 e vai finalizar um número antes total da quantidade de matriz que tem na matriz tridimenssional, e esse for vai percorrer a lista acrescentando +1;
+{
+    for(int j = 0; j < arr3D.GetLength(1); ++j) //for - Seria um laço de repetição onde ele tem o inicio e fim e percorre entre esse inicio e fim incrementando +1;
+                                                //int - Seria o tipo de dado do for;
+                                                //j - Seria o nome do for;
+                                                //j = 0 - Seria o inicio;
+                                                //< - Operador lógico menor;
+                                                //arr3D - Seria o nome da matriz tridimenssional que foi chamada;
+                                                //GetLength(1) - Ele traz o total que tem no indice 1 do tridimenssional, sendo o total de linhas que tem na matriz tridimenssional;
+                                                //++j - Aqui seria o incremento de +1;
+                                                //Sendo assim foi criado um for dentro do for do indice 0, para criar a dimensão da linha que no formato tridimenssional é depois da matriz e antes da coluna, ela vai ter o tipo dado int e vai se chamar j, esse for vai iniciar no 0 e vai finalizar um número antes da função GetLength(1) trazer o total de linhas que tem no arr3D, e ele vai percorrer por esse inicio e fim com o +1;
+    {
+        for(int k = 0; k < arr3D.GetLength(2); ++k) //for - Seria um laço de repetição onde ele tem inicio e fim e percorre entre esse inicio e fim com incremento de +1 ou -1 sendo o ++i ou --i;
+                                                    //int - tipo de do for;
+                                                    //k - Seria o nome do for;
+                                                    //k = 0 - Seria o inicio do for;
+                                                    //< - Seria o operador lógico menor;
+                                                    //arr3D - Seria o array que vai ser chamado;
+                                                    //GetLegnth(2) - Seria o total da dimensão indice 2 que no caso array tridimenssional seria a coluna;
+                                                    //++k - Seria o incremento que vai ser +1;
+                                                    //Sendo assim foi criado dentro dos primeiros for, o for do indice 2 que seria a coluna que é sempre depois da linha, ele vai ter o tipo de dado int e vai se chamar k, vai iniciar no número 0 e vai finalizar um número antes do total de colunas tem no arr3D usando a função GetLength(2) que informa o total correto que tem nas colunas e o for vai percorrer entre o inicio e fim usando o +1.;
+        {
+            Console.WriteLine($"arr3D[{i},{j},{k}] = {arr3D[i, j, k]}"); //Console.WriteLine - Seria uma mensagem que é enviada para o usuario no console;
+                                                                         //Nesse caso ele vai informar a quantidae de matriz, coluna e linha tem e vai mostrar os valores que foram atribuidos a ela;
+        }
+    }
+}
+
 
 /*
  * Ele é util pra quando você quer saber quantas dimenssões tem aquele array; 
@@ -1107,6 +1164,7 @@ Dada int[,] a = { {1,2,3}, {4,5,6} } (2x3), crie int[,] b = new int[3,2] e escre
  * 15 - Fora do segundo e depois dele vai criar um console.WriteLine() para pular a linha quando acabar a linha;
  *
  */
+/*
 //CRIANDO DO ARRAY MULTIDIMENSSIONAL - Primeiro
 int[,] a = { { 1, 2, 3 }, { 4, 5, 6 } }; //int - Seria o tipo de dado da matriz;
                                          //[,] - Aqui está chamando a matriz;
@@ -1190,3 +1248,5 @@ for(int i = 0; i < b.GetLength(0); i++) //for - Seria um laço de repetição on
     Console.WriteLine(); //Console.WriteLine - Seria uma função que é usada para mandar uma mensagem para o usuario no console; Nesse caso ele só vai pular a linha mesmo, para formar uma matriz;
 }
 
+*/
+//--------------------------------------------------------------------------------------------------------------------------------
